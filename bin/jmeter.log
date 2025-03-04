@@ -1,0 +1,477 @@
+2024-08-09 11:13:06,265 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2024-08-09 11:13:06,280 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2024-08-09 11:13:06,280 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: Version 5.6.2
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: java.version=18.0.2.1
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: os.name=Windows 10
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: os.arch=amd64
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: os.version=10.0
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: file.encoding=UTF-8
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: java.awt.headless=null
+2024-08-09 11:13:06,285 INFO o.a.j.JMeter: Max memory     =4217372672
+2024-08-09 11:13:06,286 INFO o.a.j.JMeter: Available Processors =8
+2024-08-09 11:13:06,292 INFO o.a.j.JMeter: Default Locale=English (United States)
+2024-08-09 11:13:06,292 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2024-08-09 11:13:06,292 INFO o.a.j.JMeter: JMeterHome=D:\D\Private\fiver\futureclub9\Jmeter1_Final
+2024-08-09 11:13:06,292 INFO o.a.j.JMeter: user.dir  =D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin
+2024-08-09 11:13:06,293 INFO o.a.j.JMeter: PWD       =D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin
+2024-08-09 11:13:06,294 INFO o.a.j.JMeter: IP: 192.168.1.105 Name: Qcentris-327 FullName: Qcentris-327.Qcentriseg.com
+2024-08-09 11:13:06,305 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2024-08-09 11:13:06,460 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2024-08-09 11:13:07,020 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:13:07,025 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:13:07,143 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:13:07,144 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:13:07,178 WARN o.j.r.PluginManagerMenuCreator: Was unable to install pmgr cmdline tool
+java.nio.file.NoSuchFileException: D:\D\Private\fiver\futureclub9\bin\PluginsManagerCMD.bat
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:484) ~[?:?]
+	at java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3161) ~[?:?]
+	at org.jmeterplugins.repository.PluginManagerCMDInstaller.writeOut(PluginManagerCMDInstaller.java:24) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.PluginManagerCMDInstaller.main(PluginManagerCMDInstaller.java:12) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuCreator.getMenuItemsAtLocation(PluginManagerMenuCreator.java:16) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.addPluginsMenuItems(JMeterMenuBar.java:568) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.makeOptionsMenu(JMeterMenuBar.java:315) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.createMenuBar(JMeterMenuBar.java:204) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.<init>(JMeterMenuBar.java:122) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.MainFrame.init(MainFrame.java:519) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.MainFrame.<init>(MainFrame.java:232) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.JMeterGuiLauncher.startGuiInternal(JMeterGuiLauncher.kt:112) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.JMeterGuiLauncher.access$startGuiInternal(JMeterGuiLauncher.kt:47) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.JMeterGuiLauncher$startGuiInternal$1.invokeSuspend(JMeterGuiLauncher.kt) ~[ApacheJMeter_core.jar:5.6.2]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-1.8.22.jar:1.8.22-release-407(1.8.22)]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[kotlinx-coroutines-core-jvm-1.7.1.jar:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1080) ~[?:?]
+	at java.awt.Component.show(Component.java:1729) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1676) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1016) ~[?:?]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2024-08-09 11:13:07,203 WARN o.j.r.PluginManager: Found JAR conflict: D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar and D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\jmeter-plugins-manager-1.9.jar
+2024-08-09 11:13:07,568 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-3aaf8a72d95ef838e560ae42531dc477-gui
+2024-08-09 11:13:08,907 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPopPreProcessorGui
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:209) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:153) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:107) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:101) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:184) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:49) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1080) ~[?:?]
+	at java.awt.Component.show(Component.java:1729) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1676) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1016) ~[?:?]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: java.lang.NoClassDefFoundError: kg/apc/jmeter/JMeterPluginsUtils
+	at kg.apc.jmeter.modifiers.FifoPopPreProcessorGui.getStaticLabel(FifoPopPreProcessorGui.java:26) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.initGui(AbstractJMeterGuiComponent.java:223) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.init(AbstractJMeterGuiComponent.java:228) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.<init>(AbstractJMeterGuiComponent.java:93) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.processor.gui.AbstractPreProcessorGui.<init>(AbstractPreProcessorGui.java:28) ~[ApacheJMeter_core.jar:5.6.2]
+	at kg.apc.jmeter.modifiers.FifoPopPreProcessorGui.<init>(FifoPopPreProcessorGui.java:19) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	... 44 more
+Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.JMeterPluginsUtils
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at kg.apc.jmeter.modifiers.FifoPopPreProcessorGui.getStaticLabel(FifoPopPreProcessorGui.java:26) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.initGui(AbstractJMeterGuiComponent.java:223) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.init(AbstractJMeterGuiComponent.java:228) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.<init>(AbstractJMeterGuiComponent.java:93) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.processor.gui.AbstractPreProcessorGui.<init>(AbstractPreProcessorGui.java:28) ~[ApacheJMeter_core.jar:5.6.2]
+	at kg.apc.jmeter.modifiers.FifoPopPreProcessorGui.<init>(FifoPopPreProcessorGui.java:19) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	... 44 more
+2024-08-09 11:13:08,909 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPutPostProcessorGui
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:209) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:153) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:107) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:101) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:184) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:49) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) [?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) [?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1080) ~[?:?]
+	at java.awt.Component.show(Component.java:1729) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1676) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1016) ~[?:?]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: java.lang.NoClassDefFoundError: kg/apc/jmeter/JMeterPluginsUtils
+	at kg.apc.jmeter.modifiers.FifoPutPostProcessorGui.getStaticLabel(FifoPutPostProcessorGui.java:25) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.initGui(AbstractJMeterGuiComponent.java:223) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.init(AbstractJMeterGuiComponent.java:228) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.<init>(AbstractJMeterGuiComponent.java:93) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractScopedJMeterGuiComponent.<init>(AbstractScopedJMeterGuiComponent.java:28) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.processor.gui.AbstractPostProcessorGui.<init>(AbstractPostProcessorGui.java:35) ~[ApacheJMeter_core.jar:5.6.2]
+	at kg.apc.jmeter.modifiers.FifoPutPostProcessorGui.<init>(FifoPutPostProcessorGui.java:18) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	... 44 more
+Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.JMeterPluginsUtils
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at kg.apc.jmeter.modifiers.FifoPutPostProcessorGui.getStaticLabel(FifoPutPostProcessorGui.java:25) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.initGui(AbstractJMeterGuiComponent.java:223) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.init(AbstractJMeterGuiComponent.java:228) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractJMeterGuiComponent.<init>(AbstractJMeterGuiComponent.java:93) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.AbstractScopedJMeterGuiComponent.<init>(AbstractScopedJMeterGuiComponent.java:28) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.processor.gui.AbstractPostProcessorGui.<init>(AbstractPostProcessorGui.java:35) ~[ApacheJMeter_core.jar:5.6.2]
+	at kg.apc.jmeter.modifiers.FifoPutPostProcessorGui.<init>(FifoPutPostProcessorGui.java:18) ~[jmeter-plugins-fifo-0.2.jar:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	... 44 more
+2024-08-09 11:13:09,499 INFO o.j.r.PluginManager: Plugins Status: [jpgc-fifo=0.2, jpgc-plugins-manager=1.9, jmeter-core=5.6.2, jmeter-ftp=5.6.2, jmeter-http=5.6.2, jmeter-jdbc=5.6.2, jmeter-jms=5.6.2, jmeter-junit=5.6.2, jmeter-java=5.6.2, jmeter-ldap=5.6.2, jmeter-mail=5.6.2, jmeter-mongodb=5.6.2, jmeter-native=5.6.2, jmeter-tcp=5.6.2, jmeter-components=5.6.2]
+2024-08-09 11:13:09,502 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2024-08-09 11:13:58,624 INFO o.a.j.s.FileServer: Default base='D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin'
+2024-08-09 11:13:58,627 INFO o.a.j.g.a.Load: Loading file: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx
+2024-08-09 11:13:58,627 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts'
+2024-08-09 11:13:58,781 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2024-08-09 11:13:58,785 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2024-08-09 11:13:58,786 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2024-08-09 11:13:58,787 INFO o.a.j.s.SaveService: Loading file: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx
+2024-08-09 11:13:58,788 WARN o.j.r.p.TestPlanAnalyzer: Failed read jmx file
+java.io.FileNotFoundException: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.readBytesFromFile(TestPlanAnalyzer.java:68) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.getNodeListWithClassNames(TestPlanAnalyzer.java:111) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.analyze(TestPlanAnalyzer.java:37) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.analyzeTestPlan(PluginSuggester.java:51) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.findPluginsToInstall(PluginSuggester.java:44) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.checkAndSuggest(PluginSuggester.java:28) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.logging.LoggerAppender.append(LoggerAppender.java:33) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:161) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:134) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:125) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:89) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:683) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:641) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:624) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:560) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:82) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:163) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2168) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2122) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2105) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1997) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1862) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:185) ~[log4j-slf4j-impl-2.20.0.jar:2.20.0]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:425) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:131) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:103) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.LoadRecentProject.doActionAfterCheck(LoadRecentProject.java:74) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.AbstractActionWithNoRunningTest.doAction(AbstractActionWithNoRunningTest.java:44) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2024-08-09 11:13:58,793 WARN o.j.r.p.TestPlanAnalyzer: Cannot parse file: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx
+org.xml.sax.SAXParseException: Premature end of file.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source) ~[xercesImpl-2.12.2.jar:?]
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source) ~[xercesImpl-2.12.2.jar:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:122) ~[?:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.getNodeListWithClassNames(TestPlanAnalyzer.java:112) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.analyze(TestPlanAnalyzer.java:37) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.analyzeTestPlan(PluginSuggester.java:51) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.findPluginsToInstall(PluginSuggester.java:44) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.checkAndSuggest(PluginSuggester.java:28) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.logging.LoggerAppender.append(LoggerAppender.java:33) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:161) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:134) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:125) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:89) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:683) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:641) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:624) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:560) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:82) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:163) ~[log4j-core-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2168) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2122) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2105) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1997) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1862) ~[log4j-api-2.20.0.jar:2.20.0]
+	at org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:185) ~[log4j-slf4j-impl-2.20.0.jar:2.20.0]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:425) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:131) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:103) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.LoadRecentProject.doActionAfterCheck(LoadRecentProject.java:74) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.AbstractActionWithNoRunningTest.doAction(AbstractActionWithNoRunningTest.java:44) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.2]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2024-08-09 11:13:58,794 WARN o.a.j.g.a.Load: Error reading file. java.io.FileNotFoundException: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx (The system cannot find the path specified)
+2024-08-09 11:13:58,794 ERROR o.a.j.u.JMeterUtils: D:\D\Private\fiver\futureclub9\Jmeter1\bin\Scripts\1000_30_all_30072024.jmx (The system cannot find the path specified)
+2024-08-09 11:14:24,476 INFO o.a.j.g.a.Load: Loading file: D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin\Scripts\1000_30_all_30072024.jmx
+2024-08-09 11:14:24,477 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin\Scripts'
+2024-08-09 11:14:24,477 INFO o.a.j.s.SaveService: Loading file: D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin\Scripts\1000_30_all_30072024.jmx
+2024-08-09 11:14:24,639 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2024-08-09 11:14:24,644 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2024-08-09 11:14:25,144 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2024-08-09 11:14:25,144 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2024-08-09 11:14:25,144 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2024-08-09 11:14:25,144 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2024-08-09 11:14:25,267 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,268 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,278 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,279 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,330 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,331 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,338 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,339 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:14:25,363 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\Jmeter1_Final\bin\Scripts'
+2024-08-09 11:18:05,553 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:05,553 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:05,564 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:05,565 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:18,905 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-08-09 11:18:18,906 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:18:18,906 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:18:18,907 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2024-08-09 11:18:18,907 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2024-08-09 11:18:18,930 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:18,930 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:18:18,937 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-08-09 11:18:18,980 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : B2C
+2024-08-09 11:18:18,980 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group B2C.
+2024-08-09 11:18:18,980 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-08-09 11:18:18,980 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-08-09 11:18:18,983 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-08-09 11:18:18,983 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-08-09 11:18:18,985 INFO o.a.j.t.JMeterThread: Thread started: B2C 1-1
+2024-08-09 11:18:18,986 INFO o.a.j.s.FileServer: Stored: Testdata/marketBody.txt
+2024-08-09 11:18:18,990 INFO o.a.j.s.FileServer: Stored: Testdata/Users.csv
+2024-08-09 11:18:18,996 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Qcentris-327
+2024-08-09 11:18:19,002 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2024-08-09 11:18:19,097 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2024-08-09 11:18:19,100 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2024-08-09 11:18:19,101 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2024-08-09 11:18:19,168 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2024-08-09 11:18:19,170 INFO o.a.j.u.SSLManager: KeyStore created OK
+2024-08-09 11:18:19,170 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2024-08-09 11:18:20,127 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1
+2024-08-09 11:18:20,129 INFO o.a.j.e.J.JSR223 PostProcessor: Logged In Successfully
+2024-08-09 11:18:20,130 INFO o.a.j.e.J.JSR223 PostProcessor: 715.9999999999987
+2024-08-09 11:18:20,130 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1,Logged In Successfully,715.9999999999987
+
+2024-08-09 11:18:20,266 INFO o.a.j.e.J.JSR223 PostProcessor: true
+2024-08-09 11:18:20,518 INFO o.a.j.t.JMeterThread: Thread is done: B2C 1-1
+2024-08-09 11:18:20,519 INFO o.a.j.t.JMeterThread: Thread finished: B2C 1-1
+2024-08-09 11:18:20,521 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-08-09 11:18:20,522 INFO o.a.j.s.FileServer: Close: Testdata/marketBody.txt
+2024-08-09 11:18:20,524 INFO o.a.j.s.FileServer: Close: Testdata/Users.csv
+2024-08-09 11:18:20,529 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2024-08-09 11:19:00,078 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-08-09 11:19:00,078 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:19:00,079 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-08-09 11:19:00,123 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : B2C
+2024-08-09 11:19:00,124 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group B2C.
+2024-08-09 11:19:00,124 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-08-09 11:19:00,124 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-08-09 11:19:00,125 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-08-09 11:19:00,125 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-08-09 11:19:00,125 INFO o.a.j.t.JMeterThread: Thread started: B2C 1-1
+2024-08-09 11:19:00,126 INFO o.a.j.s.FileServer: Stored: Testdata/marketBody.txt
+2024-08-09 11:19:00,127 INFO o.a.j.s.FileServer: Stored: Testdata/Users.csv
+2024-08-09 11:19:00,517 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1
+2024-08-09 11:19:00,518 INFO o.a.j.e.J.JSR223 PostProcessor: Logged In Successfully
+2024-08-09 11:19:00,518 INFO o.a.j.e.J.JSR223 PostProcessor: 715.9999999999987
+2024-08-09 11:19:00,518 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1,Logged In Successfully,715.9999999999987
+
+2024-08-09 11:19:00,626 INFO o.a.j.e.J.JSR223 PostProcessor: true
+2024-08-09 11:19:00,872 INFO o.a.j.t.JMeterThread: Thread is done: B2C 1-1
+2024-08-09 11:19:00,872 INFO o.a.j.t.JMeterThread: Thread finished: B2C 1-1
+2024-08-09 11:19:00,873 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-08-09 11:19:00,873 INFO o.a.j.s.FileServer: Close: Testdata/marketBody.txt
+2024-08-09 11:19:00,874 INFO o.a.j.s.FileServer: Close: Testdata/Users.csv
+2024-08-09 11:19:00,874 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2024-08-09 11:20:22,866 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-08-09 11:20:22,867 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:20:22,868 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-08-09 11:20:22,900 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : B2C
+2024-08-09 11:20:22,901 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group B2C.
+2024-08-09 11:20:22,901 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-08-09 11:20:22,901 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-08-09 11:20:22,901 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-08-09 11:20:22,902 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-08-09 11:20:22,902 INFO o.a.j.t.JMeterThread: Thread started: B2C 1-1
+2024-08-09 11:20:22,903 INFO o.a.j.s.FileServer: Stored: Testdata/marketBody.txt
+2024-08-09 11:20:22,904 INFO o.a.j.s.FileServer: Stored: Testdata/Users.csv
+2024-08-09 11:20:23,361 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1
+2024-08-09 11:20:23,361 INFO o.a.j.e.J.JSR223 PostProcessor: Logged In Successfully
+2024-08-09 11:20:23,361 INFO o.a.j.e.J.JSR223 PostProcessor: 715.9999999999987
+2024-08-09 11:20:23,361 INFO o.a.j.e.J.JSR223 PostProcessor: FCUserRun1_1,Logged In Successfully,715.9999999999987
+
+2024-08-09 11:20:23,457 INFO o.a.j.e.J.JSR223 PostProcessor: true
+2024-08-09 11:20:23,717 INFO o.a.j.t.JMeterThread: Thread is done: B2C 1-1
+2024-08-09 11:20:23,717 INFO o.a.j.t.JMeterThread: Thread finished: B2C 1-1
+2024-08-09 11:20:23,718 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-08-09 11:20:23,719 INFO o.a.j.s.FileServer: Close: Testdata/marketBody.txt
+2024-08-09 11:20:23,719 INFO o.a.j.s.FileServer: Close: Testdata/Users.csv
+2024-08-09 11:20:23,719 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2024-08-09 11:22:25,726 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:22:25,727 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:22:25,735 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:22:25,735 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\Jmeter1_Final\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-08-09 11:27:01,306 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-08-09 11:27:01,307 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:27:01,308 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-08-09 11:27:01,316 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Master
+2024-08-09 11:27:01,317 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Master.
+2024-08-09 11:27:01,317 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-08-09 11:27:01,317 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-08-09 11:27:01,319 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-08-09 11:27:01,319 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-08-09 11:27:01,319 INFO o.a.j.t.JMeterThread: Thread started: Master 1-1
+2024-08-09 11:27:01,320 INFO o.a.j.s.FileServer: Stored: D:/D/Private/fiver/futureclub9/Jmeter1_Final/bin/Testdata/marketIds.txt
+2024-08-09 11:27:02,208 INFO o.a.j.t.JMeterThread: Thread is done: Master 1-1
+2024-08-09 11:27:02,208 INFO o.a.j.t.JMeterThread: Thread finished: Master 1-1
+2024-08-09 11:27:02,209 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-08-09 11:27:02,209 INFO o.a.j.s.FileServer: Close: D:/D/Private/fiver/futureclub9/Jmeter1_Final/bin/Testdata/marketIds.txt
+2024-08-09 11:27:02,209 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2024-08-09 11:27:07,329 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-08-09 11:27:07,330 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-08-09 11:27:07,330 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2024-08-09 11:27:07,368 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Master
+2024-08-09 11:27:07,369 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Master.
+2024-08-09 11:27:07,369 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-08-09 11:27:07,369 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-08-09 11:27:07,369 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-08-09 11:27:07,369 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-08-09 11:27:07,369 INFO o.a.j.t.JMeterThread: Thread started: Master 1-1
+2024-08-09 11:27:07,370 INFO o.a.j.s.FileServer: Stored: D:/D/Private/fiver/futureclub9/Jmeter1_Final/bin/Testdata/marketIds.txt
+2024-08-09 11:27:07,738 INFO o.a.j.t.JMeterThread: Thread is done: Master 1-1
+2024-08-09 11:27:07,739 INFO o.a.j.t.JMeterThread: Thread finished: Master 1-1
+2024-08-09 11:27:07,740 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-08-09 11:27:07,740 INFO o.a.j.s.FileServer: Close: D:/D/Private/fiver/futureclub9/Jmeter1_Final/bin/Testdata/marketIds.txt
+2024-08-09 11:27:07,740 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
