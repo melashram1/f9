@@ -23,7 +23,7 @@
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="demoWhiteLabelId" elementType="Argument">
-            <stringProp name="Argument.value">6659f2a5dec154e617179a4f</stringProp>
+            <stringProp name="Argument.value">668fdce4c74e83e5230bc9bd</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.name">demoWhiteLabelId</stringProp>
           </elementProp>
@@ -34,12 +34,12 @@
           </elementProp>
           <elementProp name="username" elementType="Argument">
             <stringProp name="Argument.name">username</stringProp>
-            <stringProp name="Argument.value">FCUserRun1_4006</stringProp>
+            <stringProp name="Argument.value">Test_05032025</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="usernameBranch" elementType="Argument">
             <stringProp name="Argument.name">usernameBranch</stringProp>
-            <stringProp name="Argument.value">testbranch3</stringProp>
+            <stringProp name="Argument.value">testbranch</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="passwordBranch" elementType="Argument">
@@ -49,7 +49,7 @@
           </elementProp>
           <elementProp name="transactionCode" elementType="Argument">
             <stringProp name="Argument.name">transactionCode</stringProp>
-            <stringProp name="Argument.value">122025</stringProp>
+            <stringProp name="Argument.value">531136</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="branchWhiteLabel" elementType="Argument">
@@ -61,13 +61,16 @@
             <stringProp name="Argument.name">depositTypeId</stringProp>
             <stringProp name="Argument.value">669784929a449932522ac73c</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
           <elementProp name="paymentTypeId" elementType="Argument">
             <stringProp name="Argument.name">paymentTypeId</stringProp>
             <stringProp name="Argument.value">669784b79a449932522ac7f9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
         </collectionProp>
+        <stringProp name="TestPlan.comments">FCUserRun1_10001</stringProp>
       </Arguments>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
@@ -1184,14 +1187,14 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Users" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Users" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1233,7 +1236,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -1282,7 +1285,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="origin&#x9;https" elementType="Header">
                 <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">https://future9.com</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -1307,7 +1310,7 @@ fileWriter.close();
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateUser" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateUser" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -1351,7 +1354,7 @@ fileWriter.close();
                 <stringProp name="Argument.name">pts</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.value">500</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
               </elementProp>
               <elementProp name="pwnr" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1383,7 +1386,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/branch/createUser</stringProp>
@@ -1435,13 +1438,13 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">https://future9.com</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
             <stringProp name="filename">Testdata/Rem_users.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">username,password</stringProp>
@@ -1463,7 +1466,7 @@ fileWriter.close();
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LoginUser" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LoginUser" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -1497,7 +1500,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -1557,7 +1560,7 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">https://future9.com</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1650,7 +1653,7 @@ fileWriter.close();
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateAccount" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateAccount" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1830,7 +1833,7 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Login" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Login" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
@@ -2753,6 +2756,166 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Branch/api/auth/admin-1" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="email" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">email</stringProp>
+                <stringProp name="Argument.value">${usernameBranch}@gmail.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+                <stringProp name="Argument.value">${password}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="fcmToken" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">fcmToken</stringProp>
+                <stringProp name="Argument.value">tokenasfsf</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="whiteLabelId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">whiteLabelId</stringProp>
+                <stringProp name="Argument.value">${demoWhiteLabelId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.path">/api/auth/admin</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">false</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <boolProp name="HTTPSampler.md5">false</boolProp>
+          <intProp name="HTTPSampler.ipSourceType">0</intProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="secretKey" elementType="Header">
+                <stringProp name="Header.name">secretKey</stringProp>
+                <stringProp name="Header.value">rosx.AD-rYKdGNVXP8C1FN38ZuXb.uC1FDpUMP8C1FDpLPMjLPM.@$%future???AD</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">ae7fdd46-f85f-44a7-807f-7f351b322854</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">${scheme}://future9.com</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.37.3</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+        <stringProp name="ProxyControlGui.port">8888</stringProp>
+        <collectionProp name="ProxyControlGui.exclude_list"/>
+        <collectionProp name="ProxyControlGui.include_list"/>
+        <boolProp name="ProxyControlGui.capture_http_headers">true</boolProp>
+        <intProp name="ProxyControlGui.grouping_mode">0</intProp>
+        <boolProp name="ProxyControlGui.add_assertion">false</boolProp>
+        <stringProp name="ProxyControlGui.sampler_type_name"></stringProp>
+        <boolProp name="ProxyControlGui.sampler_redirect_automatically">false</boolProp>
+        <boolProp name="ProxyControlGui.sampler_follow_redirects">true</boolProp>
+        <boolProp name="ProxyControlGui.use_keepalive">true</boolProp>
+        <boolProp name="ProxyControlGui.detect_graphql_request">true</boolProp>
+        <boolProp name="ProxyControlGui.sampler_download_images">false</boolProp>
+        <intProp name="ProxyControlGui.proxy_http_sampler_naming_mode">0</intProp>
+        <stringProp name="ProxyControlGui.default_encoding"></stringProp>
+        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name">Login Branch</stringProp>
+        <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
+        <boolProp name="ProxyControlGui.notify_child_sl_filtered">false</boolProp>
+        <boolProp name="ProxyControlGui.regex_match">false</boolProp>
+        <stringProp name="ProxyControlGui.content_type_include"></stringProp>
+        <stringProp name="ProxyControlGui.content_type_exclude"></stringProp>
+      </ProxyControl>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>

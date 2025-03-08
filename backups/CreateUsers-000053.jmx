@@ -23,7 +23,7 @@
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="demoWhiteLabelId" elementType="Argument">
-            <stringProp name="Argument.value">6659f2a5dec154e617179a4f</stringProp>
+            <stringProp name="Argument.value">668fdce4c74e83e5230bc9bd</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.name">demoWhiteLabelId</stringProp>
           </elementProp>
@@ -34,12 +34,12 @@
           </elementProp>
           <elementProp name="username" elementType="Argument">
             <stringProp name="Argument.name">username</stringProp>
-            <stringProp name="Argument.value">FCUserRun1_4006</stringProp>
+            <stringProp name="Argument.value">Test_05032025</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="usernameBranch" elementType="Argument">
             <stringProp name="Argument.name">usernameBranch</stringProp>
-            <stringProp name="Argument.value">testbranch3</stringProp>
+            <stringProp name="Argument.value">testbranch</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="passwordBranch" elementType="Argument">
@@ -49,7 +49,7 @@
           </elementProp>
           <elementProp name="transactionCode" elementType="Argument">
             <stringProp name="Argument.name">transactionCode</stringProp>
-            <stringProp name="Argument.value">122025</stringProp>
+            <stringProp name="Argument.value">531136</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="branchWhiteLabel" elementType="Argument">
@@ -61,13 +61,16 @@
             <stringProp name="Argument.name">depositTypeId</stringProp>
             <stringProp name="Argument.value">669784929a449932522ac73c</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
           <elementProp name="paymentTypeId" elementType="Argument">
             <stringProp name="Argument.name">paymentTypeId</stringProp>
             <stringProp name="Argument.value">669784b79a449932522ac7f9</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
         </collectionProp>
+        <stringProp name="TestPlan.comments">FCUserRun1_10001</stringProp>
       </Arguments>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
@@ -1187,11 +1190,11 @@ fileWriter.close();
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Users" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1233,7 +1236,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -1351,7 +1354,7 @@ fileWriter.close();
                 <stringProp name="Argument.name">pts</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.value">200</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
               </elementProp>
               <elementProp name="pwnr" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1383,7 +1386,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/branch/createUser</stringProp>
@@ -1441,7 +1444,7 @@ fileWriter.close();
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
             <stringProp name="filename">Testdata/Rem_users.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">username,password</stringProp>
@@ -1497,7 +1500,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -1650,7 +1653,7 @@ fileWriter.close();
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateAccount" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateAccount" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
