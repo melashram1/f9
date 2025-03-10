@@ -44,7 +44,7 @@ set SS=%datetime:~12,2%
 set CURRENT_DATETIME=%YYYY%%MM%%DD%_%HH%%MI%%SS%
 
 :: Variables
-set JMX_FILE=Scripts\1000_30_all_30072024.jmx
+set JMX_FILE=Scripts\test_08032025.jmx
 set BASE_DIR=Execution\%CURRENT_DATETIME%
 set JTL_FILE=%BASE_DIR%\run2_%RUNTIME%sec_%THREAD_COUNT%user_%RAMP_UP%rampup.jtl
 set REPORT_DIR=%BASE_DIR%\web

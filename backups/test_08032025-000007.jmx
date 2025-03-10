@@ -59,21 +59,6 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
-          <elementProp name="noThreads" elementType="Argument">
-            <stringProp name="Argument.name">noThreads</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">${__P(noThreads)}</stringProp>
-          </elementProp>
-          <elementProp name="rampUp" elementType="Argument">
-            <stringProp name="Argument.name">rampUp</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">${__P(rampUp)}</stringProp>
-          </elementProp>
-          <elementProp name="runTime" elementType="Argument">
-            <stringProp name="Argument.name">runTime</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">${__P(runTime)}</stringProp>
-          </elementProp>
         </collectionProp>
         <stringProp name="TestPlan.comments">FCUserRun1_10001</stringProp>
       </Arguments>
@@ -98,13 +83,13 @@
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(rampUp,10)}</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">${runTime}</stringProp>
+        <stringProp name="ThreadGroup.duration">${__P(runTime,60)}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="ThreadGroup.num_threads">${noThreads}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(noThreads,10)}</stringProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login User/api/auth-3" enabled="true">
