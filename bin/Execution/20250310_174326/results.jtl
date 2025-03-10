@@ -1,0 +1,170 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741628614865,125,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-3,text,true,,2126,509,3,3,https://asia-2607.future9.com/api/auth,125,0,36
+1741628613103,666,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-1,text,true,,2126,509,1,1,https://asia-2607.future9.com/api/auth,666,0,570
+1741628613890,179,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-2,text,true,,2126,509,2,2,https://asia-2607.future9.com/api/auth,179,0,92
+1741628615850,118,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-4,text,true,,2126,509,4,4,https://asia-2607.future9.com/api/auth,118,0,31
+1741628616611,190,/api/user/account,200,OK,10.0.36.159-B2C 1-2,text,true,,4122,731,4,4,https://b2c.future9.com/api/user/account,55,0,41
+1741628616789,12,/api/user/account-0,200,OK,10.0.36.159-B2C 1-2,text,true,,2816,0,4,4,null,0,0,0
+1741628616663,138,/api/user/account,200,OK,10.0.36.159-B2C 1-3,text,true,,4123,731,4,4,https://b2c.future9.com/api/user/account,56,0,41
+1741628616792,9,/api/user/account-0,200,OK,10.0.36.159-B2C 1-3,text,true,,2817,0,4,4,null,0,0,0
+1741628616602,203,/api/user/account,200,OK,10.0.36.159-B2C 1-1,text,true,,4123,731,4,4,https://b2c.future9.com/api/user/account,67,0,48
+1741628616791,14,/api/user/account-0,200,OK,10.0.36.159-B2C 1-1,text,true,,2817,0,4,4,null,0,0,0
+1741628616885,103,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-5,text,true,,2126,509,5,5,https://asia-2607.future9.com/api/auth,103,0,18
+1741628617046,39,/api/user/account,200,OK,10.0.36.159-B2C 1-4,text,true,,4123,731,5,5,https://b2c.future9.com/api/user/account,32,0,18
+1741628617084,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-4,text,true,,2817,0,5,5,null,0,0,0
+1741628617873,52,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-2,text,false,,359,1332,6,6,https://b2c.future9.com/api/user/deposit,52,0,0
+1741628617834,39,/api/user/deposit-POST,403,Already Have Deposit Request handled successfully,10.0.36.159-B2C 1-1,text,true,,379,1368,5,5,https://b2c.future9.com/api/user/deposit,39,0,0
+1741628617837,55,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-3,text,false,,359,1374,6,6,https://b2c.future9.com/api/user/deposit,55,0,0
+1741628617887,110,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-6,text,true,,2126,509,6,6,https://asia-2607.future9.com/api/auth,110,0,29
+1741628617989,19,/api/user/withdraw-POST,403,Already Have Withdraw Request handled successfully,10.0.36.159-B2C 1-1,text,true,,380,954,6,6,https://b2c.future9.com/api/user/withdraw,19,0,0
+1741628617987,62,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-3,text,true,,1394,954,6,6,https://b2c.future9.com/api/user/withdraw,62,0,0
+1741628617982,77,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-2,text,true,,1394,954,6,6,https://b2c.future9.com/api/user/withdraw,77,0,0
+1741628618081,39,/api/user/account,200,OK,10.0.36.159-B2C 1-5,text,true,,4123,731,6,6,https://b2c.future9.com/api/user/account,34,0,18
+1741628618116,4,/api/user/account-0,200,OK,10.0.36.159-B2C 1-5,text,true,,2817,0,6,6,null,0,0,0
+1741628618114,57,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-4,text,false,,359,1368,6,6,https://b2c.future9.com/api/user/deposit,56,0,0
+1741628618174,53,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-4,text,true,,1394,954,6,6,https://b2c.future9.com/api/user/withdraw,53,0,0
+1741628618848,102,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-7,text,true,,2126,509,7,7,https://asia-2607.future9.com/api/auth,102,0,18
+1741628619072,37,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-3,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,7,7,https://b2c.future9.com/api/user/openBet,37,0,0
+1741628619086,34,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-2,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,7,7,https://b2c.future9.com/api/user/openBet,34,0,0
+1741628619099,34,/api/user/account,200,OK,10.0.36.159-B2C 1-6,text,true,,4123,731,7,7,https://b2c.future9.com/api/user/account,32,0,18
+1741628619133,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-6,text,true,,2817,0,7,7,null,0,0,0
+1741628619111,39,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-1,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,7,7,https://b2c.future9.com/api/user/openBet,39,0,0
+1741628619208,50,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-5,text,false,,359,1374,7,7,https://b2c.future9.com/api/user/deposit,50,0,0
+1741628619236,34,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-4,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,7,7,https://b2c.future9.com/api/user/openBet,34,0,0
+1741628619260,51,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-5,text,true,,1394,954,7,7,https://b2c.future9.com/api/user/withdraw,51,0,0
+1741628619850,101,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-8,text,true,,2126,509,8,8,https://asia-2607.future9.com/api/auth,101,0,17
+1741628620041,36,/api/user/account,200,OK,10.0.36.159-B2C 1-7,text,true,,4123,731,8,8,https://b2c.future9.com/api/user/account,34,0,20
+1741628620077,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-7,text,true,,2817,0,8,8,null,0,0,0
+1741628620164,16,/api/user/account,200,OK,10.0.36.159-B2C 1-3,text,true,,4137,731,8,8,https://b2c.future9.com/api/user/account,12,0,0
+1741628620177,3,/api/user/account-0,200,OK,10.0.36.159-B2C 1-3,text,true,,2831,0,8,8,null,0,0,0
+1741628620167,52,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-6,text,false,,359,1338,8,8,https://b2c.future9.com/api/user/deposit,52,0,0
+1741628620206,18,/api/user/account,200,OK,10.0.36.159-B2C 1-2,text,true,,4137,731,8,8,https://b2c.future9.com/api/user/account,16,0,0
+1741628620224,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-2,text,true,,2831,0,8,8,null,0,0,0
+1741628620223,18,/api/user/account,200,OK,10.0.36.159-B2C 1-1,text,true,,4130,731,8,8,https://b2c.future9.com/api/user/account,14,0,0
+1741628620241,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-1,text,true,,2824,0,8,8,null,0,0,0
+1741628620221,58,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-6,text,true,,1394,954,8,8,https://b2c.future9.com/api/user/withdraw,58,0,0
+1741628620332,32,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-5,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,8,8,https://b2c.future9.com/api/user/openBet,32,0,0
+1741628620363,16,/api/user/account,200,OK,10.0.36.159-B2C 1-4,text,true,,4137,731,8,8,https://b2c.future9.com/api/user/account,13,0,0
+1741628620379,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-4,text,true,,2831,0,8,8,null,0,0,0
+1741628620849,107,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-9,text,true,,2126,509,9,9,https://asia-2607.future9.com/api/auth,107,0,22
+1741628621017,36,/api/user/account,200,OK,10.0.36.159-B2C 1-8,text,true,,4123,731,9,9,https://b2c.future9.com/api/user/account,33,0,19
+1741628621053,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-8,text,true,,2817,0,9,9,null,0,0,0
+1741628621096,47,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-7,text,false,,359,1332,9,9,https://b2c.future9.com/api/user/deposit,47,0,0
+1741628621145,50,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-7,text,true,,1394,954,9,9,https://b2c.future9.com/api/user/withdraw,50,0,0
+1741628621252,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-3,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,9,9,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628621257,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-2,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,9,9,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628621273,11,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-1,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,9,9,https://b2c.future9.com/api/user/openBet?deleted=false,11,0,0
+1741628621374,13,/api/user/account,200,OK,10.0.36.159-B2C 1-5,text,true,,4137,731,9,9,https://b2c.future9.com/api/user/account,11,0,0
+1741628621387,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-5,text,true,,2831,0,9,9,null,0,0,0
+1741628621366,33,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-6,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,9,9,https://b2c.future9.com/api/user/openBet,33,0,0
+1741628621407,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-4,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,9,9,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628621847,103,Login User/api/auth-3,200,OK,10.0.36.159-B2C 1-10,text,true,,2130,510,10,10,https://asia-2607.future9.com/api/auth,102,0,18
+1741628621994,29,/api/user/account,200,OK,10.0.36.159-B2C 1-9,text,true,,4123,731,10,10,https://b2c.future9.com/api/user/account,26,0,15
+1741628622023,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-9,text,true,,2817,0,10,10,null,0,0,0
+1741628622079,53,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-8,text,false,,359,1332,10,10,https://b2c.future9.com/api/user/deposit,53,0,0
+1741628622134,54,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-8,text,true,,1394,954,10,10,https://b2c.future9.com/api/user/withdraw,54,0,0
+1741628622212,32,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-7,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,32,0,0
+1741628622274,16,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-3,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,16,0,0
+1741628622310,17,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-1,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,17,0,0
+1741628622357,16,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-2,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,16,0,0
+1741628622453,14,/api/user/account,200,OK,10.0.36.159-B2C 1-6,text,true,,4137,731,10,10,https://b2c.future9.com/api/user/account,12,0,0
+1741628622466,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-6,text,true,,2831,0,10,10,null,0,0,0
+1741628622459,11,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-5,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,11,0,0
+1741628622486,15,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-4,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,15,0,0
+1741628623004,28,/api/user/account,200,OK,10.0.36.159-B2C 1-10,text,true,,4126,731,10,10,https://b2c.future9.com/api/user/account,25,0,13
+1741628623032,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-10,text,true,,2819,0,10,10,null,0,0,0
+1741628623088,121,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-9,text,false,,359,1368,10,10,https://b2c.future9.com/api/user/deposit,121,0,0
+1741628623211,57,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-9,text,true,,1394,954,10,10,https://b2c.future9.com/api/user/withdraw,57,0,0
+1741628623271,14,/api/user/account,200,OK,10.0.36.159-B2C 1-7,text,true,,4137,731,10,10,https://b2c.future9.com/api/user/account,12,0,0
+1741628623284,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-7,text,true,,2831,0,10,10,null,0,0,0
+1741628623268,36,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-8,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,36,0,0
+1741628623379,12,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-3,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,12,0,0
+1741628623411,12,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-2,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,12,0,0
+1741628623427,16,/api/user/deposit-GET,200,OK,10.0.36.159-B2C 1-1,text,true,,1653,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,16,0,0
+1741628623480,16,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-5,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,16,0,0
+1741628623525,12,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-4,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,12,0,0
+1741628623550,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-6,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628624106,47,/api/user/deposit-POST,403,Forbidden,10.0.36.159-B2C 1-10,text,false,,359,1350,10,10,https://b2c.future9.com/api/user/deposit,47,0,0
+1741628624155,53,/api/user/withdraw-POST,200,OK,10.0.36.159-B2C 1-10,text,true,,1398,954,10,10,https://b2c.future9.com/api/user/withdraw,53,0,0
+1741628624329,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-7,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628624352,36,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-9,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,35,0,0
+1741628624383,16,/api/user/account,200,OK,10.0.36.159-B2C 1-8,text,true,,4137,731,10,10,https://b2c.future9.com/api/user/account,12,0,0
+1741628624396,3,/api/user/account-0,200,OK,10.0.36.159-B2C 1-8,text,true,,2831,0,10,10,null,0,0,0
+1741628624417,15,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-3,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,15,0,0
+1741628624459,14,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-1,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,14,0,0
+1741628624515,17,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-2,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,16,0,0
+1741628624520,12,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-5,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,12,0,0
+1741628624541,14,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-4,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,14,0,0
+1741628624603,16,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-6,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,16,0,0
+1741628625214,33,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-10,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,33,0,0
+1741628625398,17,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-7,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,17,0,0
+1741628625413,12,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-8,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,12,0,0
+1741628625431,15,/api/user/account,200,OK,10.0.36.159-B2C 1-9,text,true,,4137,731,10,10,https://b2c.future9.com/api/user/account,13,0,0
+1741628625445,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-9,text,true,,2831,0,10,10,null,0,0,0
+1741628625434,68,/api/common/home,200,OK,10.0.36.159-B2C 1-3,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,55,0,34
+1741628625551,18,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-5,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,18,0,0
+1741628625643,13,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-6,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,13,0,0
+1741628625572,91,/api/common/home,200,OK,10.0.36.159-B2C 1-1,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,48,0,25
+1741628625580,86,/api/common/home,200,OK,10.0.36.159-B2C 1-2,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,46,0,21
+1741628625612,78,/api/common/home,200,OK,10.0.36.159-B2C 1-4,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,60,0,42
+1741628626251,17,/api/user/account,200,OK,10.0.36.159-B2C 1-10,text,true,,4137,731,10,10,https://b2c.future9.com/api/user/account,13,0,0
+1741628626267,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-10,text,true,,2830,0,10,10,null,0,0,0
+1741628626430,19,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-8,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,19,0,0
+1741628626433,17,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-7,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,17,0,0
+1741628626488,13,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-9,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,13,0,0
+1741628626587,16,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-3,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,14,0,0
+1741628626711,19,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-6,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,19,0,0
+1741628626664,50,/api/common/home,200,OK,10.0.36.159-B2C 1-5,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,35,0,17
+1741628626741,19,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-2,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,15,0,0
+1741628626777,19,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-1,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,14,0,0
+1741628626804,19,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-4,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,14,0,0
+1741628627355,14,/api/user/openBet?deleted=false,200,OK,10.0.36.159-B2C 1-10,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[]'",330,608,10,10,https://b2c.future9.com/api/user/openBet?deleted=false,13,0,0
+1741628627512,12,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-8,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,12,0,0
+1741628627544,17,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-9,text,true,,1134,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,16,0,0
+1741628627543,19,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-7,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,19,0,0
+1741628627741,48,/api/common/home,200,OK,10.0.36.159-B2C 1-6,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,33,0,17
+1741628627834,19,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-5,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,17,0,0
+1741628628463,15,/api/user/transaction?trxType=deposit,200,OK,10.0.36.159-B2C 1-10,text,true,,1137,614,10,10,https://b2c.future9.com/api/user/transaction?trxType=deposit,15,0,0
+1741628628584,13,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-9,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,13,0,0
+1741628628566,50,/api/common/home,200,OK,10.0.36.159-B2C 1-7,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,39,0,20
+1741628628673,16,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-8,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,16,0,0
+1741628628773,14,/api/user/account,200,OK,10.0.36.159-B2C 1-3,text,true,,4136,731,10,10,https://b2c.future9.com/api/user/account,12,0,0
+1741628628787,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-3,text,true,,2830,0,10,10,null,0,0,0
+1741628628831,22,/api/user/account,200,OK,10.0.36.159-B2C 1-2,text,true,,4135,731,10,10,https://b2c.future9.com/api/user/account,21,0,0
+1741628628853,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-2,text,true,,2829,0,10,10,null,0,0,0
+1741628628831,28,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-6,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,12,0,0
+1741628628839,29,/api/user/account,200,OK,10.0.36.159-B2C 1-4,text,true,,4136,731,10,10,https://b2c.future9.com/api/user/account,28,0,0
+1741628628868,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-4,text,true,,2830,0,10,10,null,0,0,0
+1741628628925,15,/api/user/account,200,OK,10.0.36.159-B2C 1-1,text,true,,4130,731,10,10,https://b2c.future9.com/api/user/account,13,0,0
+1741628628940,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-1,text,true,,2824,0,10,10,null,0,0,0
+1741628629482,13,/api/user/deposit-GET,404,Not Found,10.0.36.159-B2C 1-10,text,false,"Value in json path '$..message' expected to match regexp 'Ok', but it did not match: '[""No Deposit Request Found""]'",375,633,10,10,https://b2c.future9.com/api/user/deposit?status=all&sort=amount&limit=10&page=1,13,0,0
+1741628629666,30,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-7,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,29,0,0
+1741628629695,15,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-9,text,true,,1537,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,15,0,0
+1741628629717,67,/api/common/home,200,OK,10.0.36.159-B2C 1-8,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,34,0,18
+1741628629969,14,/api/user/account,200,OK,10.0.36.159-B2C 1-5,text,true,,4136,731,10,10,https://b2c.future9.com/api/user/account,12,0,0
+1741628629982,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-5,text,true,,2830,0,10,10,null,0,0,0
+1741628630502,16,/api/user/withdraw-GET,200,OK,10.0.36.159-B2C 1-10,text,true,,1541,634,10,10,https://b2c.future9.com/api/user/withdraw?status=all&sort=amount&limit=10&page=1,16,0,0
+1741628630793,42,/api/common/home,200,OK,10.0.36.159-B2C 1-9,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,33,0,19
+1741628630869,13,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-8,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,11,0,0
+1741628630962,17,/api/user/account,200,OK,10.0.36.159-B2C 1-6,text,true,,4136,731,10,10,https://b2c.future9.com/api/user/account,16,0,0
+1741628630979,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-6,text,true,,2830,0,10,10,null,0,0,0
+1741628630808,175,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-3,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,175,0,0
+1741628630964,48,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-4,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,48,0,0
+1741628631043,34,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-1,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,34,0,0
+1741628630957,172,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-2,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,10,10,https://b2c.future9.com/api/user/openBet,172,0,0
+1741628631542,39,/api/common/home,200,OK,10.0.36.159-B2C 1-10,text,true,,223777,353,10,10,https://master.future9.com/api/common/home,29,0,12
+1741628631800,17,/api/user/account,200,OK,10.0.36.159-B2C 1-7,text,true,,4136,731,10,10,https://b2c.future9.com/api/user/account,13,0,0
+1741628631817,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-7,text,true,,2830,0,10,10,null,0,0,0
+1741628631847,22,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-9,text,true,,61840,366,10,10,https://master.future9.com/api/common/game/market/group,20,0,0
+1741628632030,14,/api/user/account,200,OK,10.0.36.159-B2C 1-4,text,true,,4137,731,9,9,https://b2c.future9.com/api/user/account,12,0,0
+1741628632043,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-4,text,true,,2831,0,8,8,null,0,0,0
+1741628632024,35,/api/user/openBet,400,Bad Request,10.0.36.159-B2C 1-5,text,false,"Value in json path '$..message' expected to match regexp 'Bet Added Successfully', but it did not match: '[""Market Is Not Active""]'",373,1067,7,7,https://b2c.future9.com/api/user/openBet,35,0,0
+1741628632073,19,/api/user/account,200,OK,10.0.36.159-B2C 1-3,text,true,,4137,731,6,6,https://b2c.future9.com/api/user/account,17,0,0
+1741628632092,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-3,text,true,,2831,0,6,6,null,0,0,0
+1741628632127,20,/api/user/account,200,OK,10.0.36.159-B2C 1-1,text,true,,4130,731,5,5,https://b2c.future9.com/api/user/account,18,0,0
+1741628632147,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-1,text,true,,2824,0,5,5,null,0,0,0
+1741628632135,19,/api/user/account,200,OK,10.0.36.159-B2C 1-2,text,true,,4137,731,5,5,https://b2c.future9.com/api/user/account,17,0,0
+1741628632154,0,/api/user/account-0,200,OK,10.0.36.159-B2C 1-2,text,true,,2831,0,5,5,null,0,0,0
+1741628632622,14,/api/common/game/market/group,200,OK,10.0.36.159-B2C 1-10,text,true,,61840,366,3,3,https://master.future9.com/api/common/game/market/group,12,0,0
+1741628632921,14,/api/user/account,200,OK,10.0.36.159-B2C 1-8,text,true,,4136,731,1,1,https://b2c.future9.com/api/user/account,12,0,0
+1741628632934,1,/api/user/account-0,200,OK,10.0.36.159-B2C 1-8,text,true,,2830,0,1,1,null,0,0,0
