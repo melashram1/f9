@@ -24,26 +24,21 @@
           </elementProp>
           <elementProp name="noThreads" elementType="Argument">
             <stringProp name="Argument.name">noThreads</stringProp>
-            <stringProp name="Argument.value">1500</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
           <elementProp name="rampUp" elementType="Argument">
             <stringProp name="Argument.name">rampUp</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">900</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
           <elementProp name="runTime" elementType="Argument">
             <stringProp name="Argument.name">runTime</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
-          </elementProp>
-          <elementProp name="noThreadsMaster" elementType="Argument">
-            <stringProp name="Argument.name">noThreadsMaster</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">500</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
@@ -1723,7 +1718,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${noThreadsMaster}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${noThreads}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
