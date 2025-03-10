@@ -45,9 +45,10 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.value">500</stringProp>
           </elementProp>
-          <elementProp name="host" elementType="Argument">
-            <stringProp name="Argument.name">host</stringProp>
+          <elementProp name="origin" elementType="Argument">
+            <stringProp name="Argument.name">origin</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.value">https://test.future9.club</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
@@ -111,7 +112,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
+            <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
             <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -140,7 +141,7 @@
                 </elementProp>
                 <elementProp name="Origin" elementType="Header">
                   <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">${scheme}://future9.com</stringProp>
+                  <stringProp name="Header.value">${origin}</stringProp>
                 </elementProp>
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -205,7 +206,7 @@
                 </elementProp>
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">origin</stringProp>
-                  <stringProp name="Header.value">https://test.future9.com</stringProp>
+                  <stringProp name="Header.value">${origin}</stringProp>
                 </elementProp>
               </collectionProp>
             </HeaderManager>
@@ -536,7 +537,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
             </collectionProp>
             <stringProp name="TestPlan.comments">Created from cURL on 2024-06-26T14:57:08.0810229</stringProp>
@@ -680,7 +681,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                   <stringProp name="Header.value">Bearer ${token}</stringProp>
                 </elementProp>
                 <elementProp name="" elementType="Header">
-                  <stringProp name="Header.value">https://test.future9.com</stringProp>
+                  <stringProp name="Header.value">${origin}</stringProp>
                   <stringProp name="Header.name">origin</stringProp>
                 </elementProp>
               </collectionProp>
@@ -828,7 +829,7 @@ if (responseMessage == &quot;Already Have Deposit Request&quot; &amp;&amp; respo
                     <stringProp name="Header.value">Bearer ${token}</stringProp>
                   </elementProp>
                   <elementProp name="" elementType="Header">
-                    <stringProp name="Header.value">https://test.future9.com</stringProp>
+                    <stringProp name="Header.value">${origin}</stringProp>
                     <stringProp name="Header.name">origin</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -955,7 +956,7 @@ if (responseMessage == &quot;Already Have Withdraw Request&quot; &amp;&amp; resp
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1034,7 +1035,7 @@ if (responseMessage == &quot;Already Have Withdraw Request&quot; &amp;&amp; resp
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
             </collectionProp>
             <stringProp name="TestPlan.comments">Created from cURL on 2024-06-26T14:57:08.0810229</stringProp>
@@ -1244,7 +1245,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1354,7 +1355,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1464,7 +1465,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1541,7 +1542,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1618,7 +1619,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1794,7 +1795,7 @@ if(!vars.get(&quot;accountId&quot;).equals(&quot;NOT_FOUND(accountId)&quot;)){
                 </elementProp>
                 <elementProp name="Origin" elementType="Header">
                   <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">https://test.future9.com</stringProp>
+                  <stringProp name="Header.value">${origin}</stringProp>
                 </elementProp>
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -2267,7 +2268,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="Origin" elementType="Header">
                 <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">https://test.future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
               <elementProp name="Priority" elementType="Header">
                 <stringProp name="Header.name">Priority</stringProp>
