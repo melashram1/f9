@@ -41,9 +41,9 @@ mkdir -p "$REPORT_DIR"
 # Run JMeter with the remote server specified and additional parameters
 ./jmeter -n -t "$JMX_FILE" -r -l "$JTL_FILE" -e -o "$REPORT_DIR" \
     -Dremote_hosts="$REMOTE_HOST" \
-    -Jthreads="$NO_THREADS" \
-    -Jrampup="$RAMP_UP" \
-    -Jruntime="$RUN_TIME"
+    -JnoThreads="$NO_THREADS" \
+    -JrampUp="$RAMP_UP" \
+    -JrunTime="$RUN_TIME"
 
 # Check if the JMeter test ran successfully
 if [ $? -eq 0 ]; then
