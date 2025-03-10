@@ -22,8 +22,8 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.name">demoWhiteLabelId</stringProp>
           </elementProp>
-          <elementProp name="noThreads" elementType="Argument">
-            <stringProp name="Argument.name">noThreads</stringProp>
+          <elementProp name="NoThreads" elementType="Argument">
+            <stringProp name="Argument.name">NoThreads</stringProp>
             <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
