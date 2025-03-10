@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 547.0,
+    "medianResTime" : 547.0,
+    "minResTime" : 547.0,
+    "maxResTime" : 547.0,
+    "pct1ResTime" : 547.0,
+    "pct2ResTime" : 547.0,
+    "pct3ResTime" : 547.0,
+    "throughput" : 1.8281535648994516,
+    "receivedKBytesPerSec" : 3.7991316270566724,
+    "sentKBytesPerSec" : 0.8640882084095063
+  },
+  "Login User/api/auth-3" : {
+    "transaction" : "Login User/api/auth-3",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 547.0,
+    "medianResTime" : 547.0,
+    "minResTime" : 547.0,
+    "maxResTime" : 547.0,
+    "pct1ResTime" : 547.0,
+    "pct2ResTime" : 547.0,
+    "pct3ResTime" : 547.0,
+    "throughput" : 1.8281535648994516,
+    "receivedKBytesPerSec" : 3.7991316270566724,
+    "sentKBytesPerSec" : 0.8640882084095063
+  }
+}
