@@ -60,10 +60,6 @@
             <stringProp name="Argument.value">2000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="filePath" elementType="Argument">
-            <stringProp name="Argument.name">filePath</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -2464,14 +2460,14 @@ fileWriter.close();
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="B2C" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="B2C_debug" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${noThreads}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${runTime}</stringProp>
@@ -3385,7 +3381,7 @@ if (responseMessage == &quot;Already Have Withdraw Request&quot; &amp;&amp; resp
     // Force the sampler to pass even if it returns 403
     prev.setSuccessful(true)
     prev.setResponseMessage(&apos;Already Have Withdraw Request handled successfully&apos;)
-   
+    prev.setResponseData(&apos;&apos;)  // Optional: Clear the response data
 }
 </stringProp>
                 <stringProp name="scriptLanguage">groovy</stringProp>
@@ -3783,26 +3779,6 @@ fileWriter.close();
 </stringProp>
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PostProcessor>
-              <hashTree/>
-              <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="JSR223 Assertion" enabled="false">
-                <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="filename"></stringProp>
-                <stringProp name="parameters"></stringProp>
-                <stringProp name="script">// Get the response message from the sampler
-def responseMessage = vars.get(&quot;message&quot;)
-log.info(&quot;Message variable: &quot; + vars.get(&quot;message&quot;))
-def responseCode = prev.getResponseCode()
-
-// Check if the message is &quot;Already Have Withdraw Request&quot; and response code is 403
-if (responseMessage == &quot;Already Have Withdraw Request&quot; &amp;&amp; responseCode == &quot;403&quot;) {
-    // Force the sampler to pass even if it returns 403
-    prev.setSuccessful(true)
-    prev.setResponseMessage(&apos;Already Have Withdraw Request handled successfully&apos;)
-    
-}
-</stringProp>
-                <stringProp name="scriptLanguage">groovy</stringProp>
-              </JSR223Assertion>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -4551,8 +4527,8 @@ fileWriter.close();
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -4588,7 +4564,7 @@ fileWriter.close();
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -4626,16 +4602,16 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Master" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Master_debug" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${noThreadsMaster}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${runTime}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -5226,7 +5202,7 @@ fileWriter.close();
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
