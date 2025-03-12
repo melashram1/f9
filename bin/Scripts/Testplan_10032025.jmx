@@ -3615,17 +3615,17 @@ fileWriter.close();
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-  &quot;marketId&quot;: &quot;67cf23ca8173cd474ef304b0&quot;,&#xd;
+  &quot;marketId&quot;: &quot;67cff59d6666c90524299204&quot;,&#xd;
   &quot;oddType&quot;: &quot;back&quot;,&#xd;
   &quot;odd&quot;: 98,&#xd;
-  &quot;run&quot;: &quot;25000&quot;,&#xd;
-  &quot;teamId&quot;: &quot;65958741&quot;,&#xd;
-  &quot;eventId&quot;: &quot;34111445&quot;,&#xd;
+  &quot;run&quot;: &quot;100000&quot;,&#xd;
+  &quot;teamId&quot;: &quot;80420082&quot;,&#xd;
+  &quot;eventId&quot;: &quot;34112319&quot;,&#xd;
   &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
-  &quot;matchDate&quot;: &quot;2025-03-11T12:30:00.000Z&quot;,&#xd;
+  &quot;matchDate&quot;: &quot;2025-03-12T14:00:00.000Z&quot;,&#xd;
   &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
   &quot;stake&quot;: 1,&#xd;
-  &quot;nation&quot;: &quot;AE&quot;,&#xd;
+  &quot;nation&quot;: &quot;GB&quot;,&#xd;
   &quot;browserDetail&quot;: {&#xd;
     &quot;name&quot;: &quot;Chrome&quot;,&#xd;
     &quot;os&quot;: &quot;Windows&quot;,&#xd;
@@ -3633,11 +3633,11 @@ fileWriter.close();
     &quot;mobile&quot;: &quot;false&quot;&#xd;
   },&#xd;
   &quot;countryDetail&quot;: {&#xd;
-    &quot;continent&quot;: &quot;Asia&quot;,&#xd;
-    &quot;city&quot;: &quot;Dubai&quot;,&#xd;
-    &quot;country&quot;: &quot;United Arab Emirates&quot;,&#xd;
-    &quot;countryFlag&quot;: &quot;https://cdn.ipwhois.io/flags/ae.svg&quot;,&#xd;
-    &quot;region&quot;: &quot;Dubai&quot;&#xd;
+    &quot;continent&quot;: &quot;Europe&quot;,&#xd;
+    &quot;city&quot;: &quot;London&quot;,&#xd;
+    &quot;country&quot;: &quot;United Kingdom&quot;,&#xd;
+    &quot;countryFlag&quot;: &quot;https://cdn.ipwhois.io/flags/gb.svg&quot;,&#xd;
+    &quot;region&quot;: &quot;England&quot;&#xd;
   }&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -4546,7 +4546,7 @@ fileWriter.close();
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -5258,6 +5258,43 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
