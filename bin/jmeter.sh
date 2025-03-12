@@ -26,7 +26,7 @@
 ##   JVM_ARGS - optional java args, e.g. -Dprop=val
 ##
 ##   e.g.
-##   JVM_ARGS="-Xms512m -Xmx512m" jmeter.sh etc.
+   JVM_ARGS="-Xms4000m -Xmx6000m" jmeter.sh etc.
 ##
 ##   ==============================================
 
