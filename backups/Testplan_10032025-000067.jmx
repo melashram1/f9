@@ -24,7 +24,7 @@
           </elementProp>
           <elementProp name="noThreads" elementType="Argument">
             <stringProp name="Argument.name">noThreads</stringProp>
-            <stringProp name="Argument.value">2000</stringProp>
+            <stringProp name="Argument.value">5000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
@@ -60,8 +60,9 @@
             <stringProp name="Argument.value">2000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="filePath" elementType="Argument">
-            <stringProp name="Argument.name">filePath</stringProp>
+          <elementProp name="eventId" elementType="Argument">
+            <stringProp name="Argument.name">eventId</stringProp>
+            <stringProp name="Argument.value">34114016</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -267,193 +268,6 @@ char SEPARATOR = &apos;,&apos;;
 
 
 String csvFile = &quot;Execution//OutputLogs//checkingUsers.csv&quot;
-
-
-def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString(),vars.get(&quot;availablePts&quot;)];
-
-//function write line in csv
-def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
-    boolean firstParameter = true;
-    StringBuilder stringBuilder = new StringBuilder();
-    String parameter = &quot; &quot;;
-
-    for (int i = 0; i &lt; parameters.size(); i++) {
-        //get param
-        parameter = parameters[i];
-        log.info(parameter);
-
-        //if the first param in the line, separator is not needed
-        if (!firstParameter) {
-            stringBuilder.append(separator);
-        }
-
-        //Add param to line
-        stringBuilder.append(parameter);
-
-        firstParameter = false;
-    }
-
-    //prepare file to next line
-    stringBuilder.append(&quot;\n&quot;);
-
-    //add to file the line
-    log.info(stringBuilder.toString());
-    writer.append(stringBuilder.toString());
-}
-
-FileWriter fileWriter = new FileWriter(csvFile, true);
-writeLine(fileWriter, params, SEPARATOR);
-
-//proper close to file
-fileWriter.flush();
-fileWriter.close();
-</stringProp>
-              <stringProp name="scriptLanguage">groovy</stringProp>
-            </JSR223PostProcessor>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="false">
-            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="email" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">email</stringProp>
-                  <stringProp name="Argument.value">${username}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="password" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">password</stringProp>
-                  <stringProp name="Argument.value">${password}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="fcmToken" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">fcmToken</stringProp>
-                  <stringProp name="Argument.value">tokenasfsf</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="whitelabelId" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">whitelabelId</stringProp>
-                  <stringProp name="Argument.value">${demoWhiteLabelId}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
-            <stringProp name="HTTPSampler.port">443</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/api/auth</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-            <boolProp name="HTTPSampler.image_parser">false</boolProp>
-            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <boolProp name="HTTPSampler.md5">false</boolProp>
-            <intProp name="HTTPSampler.ipSourceType">0</intProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-              <stringProp name="filename">Testdata/Users.csv</stringProp>
-              <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="variableNames">username,password</stringProp>
-              <boolProp name="ignoreFirstLine">false</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">false</boolProp>
-              <boolProp name="stopThread">true</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="secretKey" elementType="Header">
-                  <stringProp name="Header.name">secretKey</stringProp>
-                  <stringProp name="Header.value">rosx.AD-rYKdGNVXP8C1FN38ZuXb.uC1FDpUMP8C1FDpLPMjLPM.@$%future???AD</stringProp>
-                </elementProp>
-                <elementProp name="Postman-Token" elementType="Header">
-                  <stringProp name="Header.name">Postman-Token</stringProp>
-                  <stringProp name="Header.value">358f5850-4c82-46af-83a6-c5c95a2c4712</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-                </elementProp>
-                <elementProp name="Cache-Control" elementType="Header">
-                  <stringProp name="Header.name">Cache-Control</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">PostmanRuntime/7.37.3</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">*/*</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">origin</stringProp>
-                  <stringProp name="Header.value">https://future9.com</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regex Token Extractor" enabled="true">
-              <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-              <stringProp name="RegexExtractor.refname">token</stringProp>
-              <stringProp name="RegexExtractor.regex">Bearer:\s+(.+)</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">NOT_FOUND(token)</stringProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
-            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-              <stringProp name="JSON_PATH">$..message</stringProp>
-              <stringProp name="EXPECTED_VALUE">Logged In Successfully</stringProp>
-              <boolProp name="JSONVALIDATION">true</boolProp>
-              <boolProp name="EXPECT_NULL">false</boolProp>
-              <boolProp name="INVERT">false</boolProp>
-              <boolProp name="ISREGEX">true</boolProp>
-            </JSONPathAssertion>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
-              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
-              <stringProp name="JSONPostProcessor.referenceNames">availablePts</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$..availablePts</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(availablePts)</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="script">//Default separator
-char SEPARATOR = &apos;,&apos;;
-
-
-String csvFile = &quot;checkingUsers1.csv&quot;
 
 
 def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString(),vars.get(&quot;availablePts&quot;)];
@@ -1086,7 +900,7 @@ fileWriter.close();
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">eventId</stringProp>
-                <stringProp name="Argument.value">34111445</stringProp>
+                <stringProp name="Argument.value">${eventId}</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -1233,31 +1047,31 @@ fileWriter.close();
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-  &quot;marketId&quot;: &quot;67cff59d6666c90524299204&quot;,&#xd;
-  &quot;oddType&quot;: &quot;back&quot;,&#xd;
-  &quot;odd&quot;: 98,&#xd;
-  &quot;run&quot;: &quot;100000&quot;,&#xd;
-  &quot;teamId&quot;: &quot;80420082&quot;,&#xd;
-  &quot;eventId&quot;: &quot;34112319&quot;,&#xd;
-  &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
-  &quot;matchDate&quot;: &quot;2025-03-12T14:00:00.000Z&quot;,&#xd;
-  &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
-  &quot;stake&quot;: 1,&#xd;
-  &quot;nation&quot;: &quot;GB&quot;,&#xd;
-  &quot;browserDetail&quot;: {&#xd;
-    &quot;name&quot;: &quot;Chrome&quot;,&#xd;
-    &quot;os&quot;: &quot;Windows&quot;,&#xd;
-    &quot;version&quot;: &quot;133.0.0.0&quot;,&#xd;
-    &quot;mobile&quot;: &quot;false&quot;&#xd;
-  },&#xd;
-  &quot;countryDetail&quot;: {&#xd;
-    &quot;continent&quot;: &quot;Europe&quot;,&#xd;
-    &quot;city&quot;: &quot;London&quot;,&#xd;
-    &quot;country&quot;: &quot;United Kingdom&quot;,&#xd;
-    &quot;countryFlag&quot;: &quot;https://cdn.ipwhois.io/flags/gb.svg&quot;,&#xd;
-    &quot;region&quot;: &quot;England&quot;&#xd;
-  }&#xd;
-}</stringProp>
+    &quot;marketId&quot;: &quot;67d1c78c555bba81ca2576a0&quot;,&#xd;
+    &quot;oddType&quot;: &quot;back&quot;,&#xd;
+    &quot;odd&quot;: 98,&#xd;
+    &quot;run&quot;: &quot;25000&quot;,&#xd;
+    &quot;teamId&quot;: &quot;2857968&quot;,&#xd;
+    &quot;eventId&quot;: &quot;${eventId}&quot;,&#xd;
+    &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
+    &quot;matchDate&quot;: &quot;2025-03-13T03:00:00.000Z&quot;,&#xd;
+    &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
+    &quot;stake&quot;: 1,&#xd;
+    &quot;nation&quot;: &quot;Unknown&quot;,&#xd;
+    &quot;browserDetail&quot;: {&#xd;
+        &quot;name&quot;: &quot;Chrome&quot;,&#xd;
+        &quot;os&quot;: &quot;Windows&quot;,&#xd;
+        &quot;version&quot;: &quot;134.0.0.0&quot;,&#xd;
+        &quot;mobile&quot;: &quot;false&quot;&#xd;
+    },&#xd;
+    &quot;countryDetail&quot;: {&#xd;
+        &quot;continent&quot;: &quot;Unknown&quot;,&#xd;
+        &quot;city&quot;: &quot;Unknown&quot;,&#xd;
+        &quot;country&quot;: &quot;Unknown&quot;,&#xd;
+        &quot;countryFlag&quot;: &quot;Unknown&quot;,&#xd;
+        &quot;region&quot;: &quot;Unknown&quot;&#xd;
+    }&#xd;
+} </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2158,7 +1972,7 @@ fileWriter.close();
               <elementProp name="marketId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.name">marketId</stringProp>
-                <stringProp name="Argument.value">67cdfc91318226069166b120;67cdfc91318226069166b129;67cf2c039ea2a497248070c9;67cf2c039ea2a497248070c3;67cf2caa9ea2a49724870286;67cf2c039ea2a497248070c6;67ce649431822606919eca13;67ce667a9ea2a4972440f783;67ce649431822606919ec9ec;67ce649431822606919eca2a;67ce649431822606919eca23;67ce61c89ea2a49724199441;67ce61c89ea2a49724199403;67ce61c89ea2a4972419943a;67ce649431822606919ec9f3;67ce61c89ea2a49724199417;67ce649431822606919eca00;67ce61c89ea2a4972419940d;67cf15a98173cd474eb9af43;67cf15a98173cd474eb9af3f;67ce649431822606919eca3a;67ac6d40fdd9ec1988390df2;67cad568e35d0f3c44787ccb;67cc22fae35d0f3c4408dcd7;67cd1ea7b3022bfe401d9393;67cd1ea7b3022bfe401d9390;67ce68593182260691b4ec1d;</stringProp>
+                <stringProp name="Argument.value">67d1c78c555bba81ca2576a0</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
@@ -2247,7 +2061,7 @@ fileWriter.close();
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">D:/D/Private/fiver/futureclub9/Jmeter1_Final/bin/Testdata/marketIds.txt</stringProp>
+            <stringProp name="filename">Testdata/marketIds.txt</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">marketIds</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -2271,7 +2085,7 @@ fileWriter.close();
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2308,7 +2122,7 @@ fileWriter.close();
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
