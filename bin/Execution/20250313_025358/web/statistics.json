@@ -1,0 +1,50 @@
+{
+  "/api/auth" : {
+    "transaction" : "/api/auth",
+    "sampleCount" : 20,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 196.8,
+    "medianResTime" : 113.0,
+    "minResTime" : 99.0,
+    "maxResTime" : 890.0,
+    "pct1ResTime" : 758.7000000000013,
+    "pct2ResTime" : 886.5,
+    "pct3ResTime" : 890.0,
+    "throughput" : 0.024614718124555398,
+    "receivedKBytesPerSec" : 0.051742589354503626,
+    "sentKBytesPerSec" : 0.012272504236808356
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 20031,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 42.85402625929765,
+    "medianResTime" : 34.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 2199.0,
+    "pct1ResTime" : 53.0,
+    "pct2ResTime" : 65.0,
+    "pct3ResTime" : 198.9800000000032,
+    "throughput" : 24.65287093764846,
+    "receivedKBytesPerSec" : 2289.060560148679,
+    "sentKBytesPerSec" : 14.226432099684684
+  },
+  "api/protected/game/market/status/eventId" : {
+    "transaction" : "api/protected/game/market/status/eventId",
+    "sampleCount" : 20011,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 42.700164909299886,
+    "medianResTime" : 34.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 2199.0,
+    "pct1ResTime" : 53.0,
+    "pct2ResTime" : 65.0,
+    "pct3ResTime" : 196.950000000008,
+    "throughput" : 66.9790638126956,
+    "receivedKBytesPerSec" : 6225.193789302421,
+    "sentKBytesPerSec" : 38.65686202471006
+  }
+}
