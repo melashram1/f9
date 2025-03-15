@@ -1,36 +1,37 @@
-2025-03-15 23:07:43,798 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
-2025-03-15 23:07:43,808 INFO o.a.j.JMeter: Loading user properties from: user.properties
-2025-03-15 23:07:43,808 INFO o.a.j.JMeter: Loading system properties from: system.properties
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: Version 5.6.2
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: java.version=1.8.0_431
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: os.name=Windows 10
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: os.arch=amd64
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: os.version=10.0
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: file.encoding=Cp1252
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: java.awt.headless=null
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: Max memory     =3749183488
-2025-03-15 23:07:43,813 INFO o.a.j.JMeter: Available Processors =8
-2025-03-15 23:07:43,817 INFO o.a.j.JMeter: Default Locale=English (United States)
-2025-03-15 23:07:43,817 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
-2025-03-15 23:07:43,817 INFO o.a.j.JMeter: JMeterHome=D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k
-2025-03-15 23:07:43,817 INFO o.a.j.JMeter: user.dir  =D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin
-2025-03-15 23:07:43,818 INFO o.a.j.JMeter: PWD       =D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin
-2025-03-15 23:07:43,819 INFO o.a.j.JMeter: IP: 192.168.1.3 Name: Qcentris-327 FullName: Qcentris-327.Qcentriseg.com
-2025-03-15 23:07:43,831 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2025-03-15 23:07:43,946 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsLookAndFeel
-2025-03-15 23:07:44,526 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,617 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,619 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,626 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,702 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,705 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,710 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,713 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:44,765 WARN o.j.r.PluginManager: Found JAR conflict: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar and D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar
-2025-03-15 23:07:45,467 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-3aacc2f9c7f5f50c6c552ee12a94be25-gui
-2025-03-15 23:07:46,674 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: com.blazemeter.jmeter.controller.ParallelControllerGui
+2025-03-15 23:11:50,697 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2025-03-15 23:11:50,706 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-03-15 23:11:50,706 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: Version 5.6.2
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: java.version=1.8.0_431
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: os.name=Windows 10
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: os.arch=amd64
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: os.version=10.0
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: java.awt.headless=null
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: Max memory     =3749183488
+2025-03-15 23:11:50,712 INFO o.a.j.JMeter: Available Processors =8
+2025-03-15 23:11:50,716 INFO o.a.j.JMeter: Default Locale=English (United States)
+2025-03-15 23:11:50,716 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2025-03-15 23:11:50,716 INFO o.a.j.JMeter: JMeterHome=D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k
+2025-03-15 23:11:50,716 INFO o.a.j.JMeter: user.dir  =D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin
+2025-03-15 23:11:50,717 INFO o.a.j.JMeter: PWD       =D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin
+2025-03-15 23:11:50,718 INFO o.a.j.JMeter: IP: 192.168.1.3 Name: Qcentris-327 FullName: Qcentris-327.Qcentriseg.com
+2025-03-15 23:11:50,731 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-03-15 23:11:50,845 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2025-03-15 23:11:51,395 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,481 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,483 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,490 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,556 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,559 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,561 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,564 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:11:51,614 WARN o.j.r.PluginManager: Found JAR conflict: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar and D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar
+2025-03-15 23:11:52,365 INFO o.j.r.JARSourceHTTP: Found cached repo
+2025-03-15 23:11:52,575 INFO o.j.r.PluginManager: Plugins Status: [jpgc-fifo=0.2, bzm-parallel=0.12, jpgc-plugins-manager=1.10, jmeter-core=5.6.2, jmeter-ftp=5.6.2, jmeter-http=5.6.2, jmeter-jdbc=5.6.2, jmeter-jms=5.6.2, jmeter-junit=5.6.2, jmeter-java=5.6.2, jmeter-ldap=5.6.2, jmeter-mail=5.6.2, jmeter-mongodb=5.6.2, jmeter-native=5.6.2, jmeter-tcp=5.6.2, jmeter-components=5.6.2]
+2025-03-15 23:11:53,554 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: com.blazemeter.jmeter.controller.ParallelControllerGui
 java.lang.reflect.InvocationTargetException: null
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_431]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_431]
@@ -91,7 +92,7 @@ Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.JMeterPluginsUtils
 	at com.blazemeter.jmeter.controller.ParallelControllerGui.init(ParallelControllerGui.java:34) ~[jmeter-parallel-0.12.jar:?]
 	at com.blazemeter.jmeter.controller.ParallelControllerGui.<init>(ParallelControllerGui.java:27) ~[jmeter-parallel-0.12.jar:?]
 	... 48 more
-2025-03-15 23:07:46,681 WARN o.a.j.g.u.MenuFactory: Configuration error, probably corrupt or missing third party library(jar)? Could not create class: com.blazemeter.jmeter.http.ParallelHTTPSamplerGui.
+2025-03-15 23:11:53,558 WARN o.a.j.g.u.MenuFactory: Configuration error, probably corrupt or missing third party library(jar)? Could not create class: com.blazemeter.jmeter.http.ParallelHTTPSamplerGui.
 java.lang.NoClassDefFoundError: kg/apc/jmeter/gui/ButtonPanelAddCopyRemove
 	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:1.8.0_431]
 	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[?:1.8.0_431]
@@ -146,7 +147,7 @@ Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.gui.ButtonPanelAddCop
 	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_431]
 	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_431]
 	... 48 more
-2025-03-15 23:07:46,684 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPopPreProcessorGui
+2025-03-15 23:11:53,560 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPopPreProcessorGui
 java.lang.reflect.InvocationTargetException: null
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_431]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_431]
@@ -215,7 +216,7 @@ Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.JMeterPluginsUtils
 	at org.apache.jmeter.processor.gui.AbstractPreProcessorGui.<init>(AbstractPreProcessorGui.java:28) ~[ApacheJMeter_core.jar:5.6.2]
 	at kg.apc.jmeter.modifiers.FifoPopPreProcessorGui.<init>(FifoPopPreProcessorGui.java:19) ~[jmeter-plugins-fifo-0.2.jar:?]
 	... 48 more
-2025-03-15 23:07:46,687 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPutPostProcessorGui
+2025-03-15 23:11:53,562 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: kg.apc.jmeter.modifiers.FifoPutPostProcessorGui
 java.lang.reflect.InvocationTargetException: null
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_431]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_431]
@@ -286,54 +287,38 @@ Caused by: java.lang.ClassNotFoundException: kg.apc.jmeter.JMeterPluginsUtils
 	at org.apache.jmeter.processor.gui.AbstractPostProcessorGui.<init>(AbstractPostProcessorGui.java:35) ~[ApacheJMeter_core.jar:5.6.2]
 	at kg.apc.jmeter.modifiers.FifoPutPostProcessorGui.<init>(FifoPutPostProcessorGui.java:18) ~[jmeter-plugins-fifo-0.2.jar:?]
 	... 48 more
-2025-03-15 23:07:50,310 INFO o.j.r.PluginManager: Plugins Status: [jpgc-fifo=0.2, bzm-parallel=0.12, jpgc-plugins-manager=1.10, jmeter-core=5.6.2, jmeter-ftp=5.6.2, jmeter-http=5.6.2, jmeter-jdbc=5.6.2, jmeter-jms=5.6.2, jmeter-junit=5.6.2, jmeter-java=5.6.2, jmeter-ldap=5.6.2, jmeter-mail=5.6.2, jmeter-mongodb=5.6.2, jmeter-native=5.6.2, jmeter-tcp=5.6.2, jmeter-components=5.6.2]
-2025-03-15 23:07:51,897 WARN o.j.r.h.StatsReporter: Failed to send repo stats
-org.apache.http.conn.ConnectTimeoutException: Connect to jmeter-plugins.org:443 timed out
-	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:545) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.14.jar:4.5.14]
-	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:499) ~[jmeter-plugins-manager-1.10.jar:?]
-	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:494) ~[jmeter-plugins-manager-1.10.jar:?]
-	at org.jmeterplugins.repository.JARSourceHTTP.reportStats(JARSourceHTTP.java:451) ~[jmeter-plugins-manager-1.10.jar:?]
-	at org.jmeterplugins.repository.http.StatsReporter.run(StatsReporter.java:24) [jmeter-plugins-manager-1.10.jar:?]
-2025-03-15 23:07:52,814 INFO o.a.j.s.FileServer: Default base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin'
-2025-03-15 23:07:52,816 INFO o.a.j.g.a.Load: Loading file: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts\Testplan_10032025.jmx
-2025-03-15 23:07:52,816 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts'
-2025-03-15 23:07:52,916 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2025-03-15 23:07:52,922 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2025-03-15 23:07:52,923 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2025-03-15 23:07:52,925 INFO o.a.j.s.SaveService: Loading file: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts\Testplan_10032025.jmx
-2025-03-15 23:07:53,058 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2025-03-15 23:07:53,069 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2025-03-15 23:07:54,004 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2025-03-15 23:07:54,004 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2025-03-15 23:07:54,004 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2025-03-15 23:07:54,004 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2025-03-15 23:07:54,154 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,158 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,161 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,163 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,175 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,177 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,181 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,183 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,270 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,273 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,275 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,277 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,284 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,289 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,292 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,294 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-03-15 23:07:54,324 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts'
+2025-03-15 23:12:01,512 INFO o.a.j.s.FileServer: Default base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin'
+2025-03-15 23:12:01,515 INFO o.a.j.g.a.Load: Loading file: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts\Testplan_10032025.jmx
+2025-03-15 23:12:01,515 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts'
+2025-03-15 23:12:01,618 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-03-15 23:12:01,624 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-03-15 23:12:01,626 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-03-15 23:12:01,628 INFO o.a.j.s.SaveService: Loading file: D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts\Testplan_10032025.jmx
+2025-03-15 23:12:01,735 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-03-15 23:12:01,743 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-03-15 23:12:01,744 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-03-15 23:12:01,744 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-03-15 23:12:01,744 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-03-15 23:12:01,744 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-03-15 23:12:01,744 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-03-15 23:12:02,709 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-03-15 23:12:02,709 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-03-15 23:12:02,709 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-03-15 23:12:02,709 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-03-15 23:12:02,856 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,859 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,862 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,864 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,873 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,876 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,877 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,879 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,961 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,963 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,967 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,969 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,977 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,981 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,985 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-plugins-fifo-0.2.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:02,987 INFO o.a.j.r.ClassFinder: Will scan jar D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\lib\ext\jmeter-parallel-0.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-03-15 23:12:03,026 INFO o.a.j.s.FileServer: Set new base='D:\D\Private\fiver\futureclub9\NewDelivery\Jmeter5_Final_2k\bin\Scripts'
