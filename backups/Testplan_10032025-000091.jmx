@@ -24,7 +24,7 @@
           </elementProp>
           <elementProp name="noThreads" elementType="Argument">
             <stringProp name="Argument.name">noThreads</stringProp>
-            <stringProp name="Argument.value">3990</stringProp>
+            <stringProp name="Argument.value">1900</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
@@ -37,13 +37,13 @@
           <elementProp name="runTime" elementType="Argument">
             <stringProp name="Argument.name">runTime</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.value">1800</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
           <elementProp name="noThreadsMaster" elementType="Argument">
             <stringProp name="Argument.name">noThreadsMaster</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
           </elementProp>
           <elementProp name="origin" elementType="Argument">
             <stringProp name="Argument.name">origin</stringProp>
@@ -62,7 +62,7 @@
           </elementProp>
           <elementProp name="eventId" elementType="Argument">
             <stringProp name="Argument.name">eventId</stringProp>
-            <stringProp name="Argument.value">34112215</stringProp>
+            <stringProp name="Argument.value">34121857</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -100,7 +100,7 @@
       <hashTree>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -184,7 +184,7 @@
               <boolProp name="ignoreFirstLine">false</boolProp>
               <stringProp name="delimiter">,</stringProp>
               <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
+              <boolProp name="recycle">false</boolProp>
               <boolProp name="stopThread">false</boolProp>
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
@@ -313,7 +313,7 @@ fileWriter.close();
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -1260,30 +1260,30 @@ fileWriter.close();
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;marketId&quot;: &quot;67d19f751faf1bca109e6e0f&quot;,&#xd;
-    &quot;oddType&quot;: &quot;back&quot;,&#xd;
-    &quot;odd&quot;: 98,&#xd;
-    &quot;run&quot;: &quot;100000&quot;,&#xd;
-    &quot;teamId&quot;: &quot;890530&quot;,&#xd;
-    &quot;eventId&quot;: &quot;${eventId}&quot;,&#xd;
-    &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
-    &quot;matchDate&quot;: &quot;2025-03-14T06:15:00.000Z&quot;,&#xd;
-    &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
-    &quot;stake&quot;: 1,&#xd;
-    &quot;nation&quot;: &quot;Unknown&quot;,&#xd;
-    &quot;browserDetail&quot;: {&#xd;
-        &quot;name&quot;: &quot;Chrome&quot;,&#xd;
-        &quot;os&quot;: &quot;Windows&quot;,&#xd;
-        &quot;version&quot;: &quot;134.0.0.0&quot;,&#xd;
-        &quot;mobile&quot;: &quot;false&quot;&#xd;
-    },&#xd;
-    &quot;countryDetail&quot;: {&#xd;
-        &quot;continent&quot;: &quot;Unknown&quot;,&#xd;
-        &quot;city&quot;: &quot;Unknown&quot;,&#xd;
-        &quot;country&quot;: &quot;Unknown&quot;,&#xd;
-        &quot;countryFlag&quot;: &quot;Unknown&quot;,&#xd;
-        &quot;region&quot;: &quot;Unknown&quot;&#xd;
-    }&#xd;
+  &quot;marketId&quot;: &quot;67d4840ab4d34cb799eda98a&quot;,&#xd;
+  &quot;oddType&quot;: &quot;back&quot;,&#xd;
+  &quot;odd&quot;: 88,&#xd;
+  &quot;run&quot;: &quot;5&quot;,&#xd;
+  &quot;teamId&quot;: &quot;0.7430137159276409&quot;,&#xd;
+  &quot;eventId&quot;: &quot;34121857&quot;,&#xd;
+  &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
+  &quot;matchDate&quot;: &quot;2025-03-15T14:00:00.000Z&quot;,&#xd;
+  &quot;name&quot;: &quot;BOOKMAKER&quot;,&#xd;
+  &quot;stake&quot;: 1,&#xd;
+  &quot;nation&quot;: &quot;AE&quot;,&#xd;
+  &quot;browserDetail&quot;: {&#xd;
+    &quot;name&quot;: &quot;Chrome&quot;,&#xd;
+    &quot;os&quot;: &quot;Windows&quot;,&#xd;
+    &quot;version&quot;: &quot;134.0.0.0&quot;,&#xd;
+    &quot;mobile&quot;: &quot;false&quot;&#xd;
+  },&#xd;
+  &quot;countryDetail&quot;: {&#xd;
+    &quot;continent&quot;: &quot;Asia&quot;,&#xd;
+    &quot;city&quot;: &quot;Dubai&quot;,&#xd;
+    &quot;country&quot;: &quot;United Arab Emirates&quot;,&#xd;
+    &quot;countryFlag&quot;: &quot;https://cdn.ipwhois.io/flags/ae.svg&quot;,&#xd;
+    &quot;region&quot;: &quot;Dubai&quot;&#xd;
+  }&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2191,7 +2191,7 @@ fileWriter.close();
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -2366,7 +2366,7 @@ fileWriter.close();
               <boolProp name="ignoreFirstLine">false</boolProp>
               <stringProp name="delimiter">,</stringProp>
               <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
+              <boolProp name="recycle">false</boolProp>
               <boolProp name="stopThread">false</boolProp>
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
@@ -2496,23 +2496,23 @@ fileWriter.close();
             <hashTree/>
           </hashTree>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="api/protected/game/market/status/eventId" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="api/protected/game/market/status/ids" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="eventId" elementType="HTTPArgument">
+              <elementProp name="marketId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">eventId</stringProp>
-                <stringProp name="Argument.value">${eventId}</stringProp>
+                <stringProp name="Argument.name">marketId</stringProp>
+                <stringProp name="Argument.value">67ac6d40fdd9ec1988390df2;67d3a8f855d14cec90391a0d;67d3a8f855d14cec90391a19;67d3a8f855d14cec90391a16;67d3a8f855d14cec90391a22;67d3c116556096a2a2e4df91;67d3e25a1914ff35083adbd9;67d3e1d4d89779de863a2d7b;67d3afe1556096a2a25a14c8;67d3ae2f55d14cec905e3488;67d3ae2f55d14cec905e348f;67d3aeb855d14cec90617e24;67d3aeb855d14cec90617e1d;67d3aeb855d14cec90617e2e;67d3aeb855d14cec90617e44;67d3ad91556096a2a24a1ce9;67d3aeb855d14cec90617dfd;67d3e25a1914ff35083adbe1;67d3ae2f55d14cec905e346b;67d3af77556096a2a2571ea0;67d3af77556096a2a2571e93;67d3afe1556096a2a25a1494;67d3e25a1914ff35083adbe5;67d3af77556096a2a2571eca;67d3e1d4d89779de863a2d77;67d067c7867a354f259ee724;67d1e903fd6227fa41866042;67d3e2ed286f5f523e211463;</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">master.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">api/protected/game/market/status/eventId</stringProp>
+          <stringProp name="HTTPSampler.path">api/protected/game/market/status/ids</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2640,7 +2640,7 @@ fileWriter.close();
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>160.0</value>
+            <value>1000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -2683,8 +2683,8 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
@@ -2720,7 +2720,7 @@ fileWriter.close();
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
