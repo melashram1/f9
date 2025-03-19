@@ -52,7 +52,7 @@
           </elementProp>
           <elementProp name="iterationTime" elementType="Argument">
             <stringProp name="Argument.name">iterationTime</stringProp>
-            <stringProp name="Argument.value">40000</stringProp>
+            <stringProp name="Argument.value">30000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thinkTime" elementType="Argument">
@@ -62,7 +62,7 @@
           </elementProp>
           <elementProp name="eventId" elementType="Argument">
             <stringProp name="Argument.name">eventId</stringProp>
-            <stringProp name="Argument.value">34121857</stringProp>
+            <stringProp name="Argument.value">34135335</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -83,10 +83,22 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">Testdata/UsersWithToken.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">username,password,token</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">false</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="B2C" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${noThreads}</stringProp>
@@ -96,9 +108,10 @@
         <stringProp name="ThreadGroup.duration">${runTime}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="TestPlan.comments"> </stringProp>
       </ThreadGroup>
       <hashTree>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -911,7 +924,7 @@ fileWriter.close();
               <stringProp name="IfController.condition">${accountIdOk}</stringProp>
             </IfController>
             <hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/user/withdraw-POST" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/user/withdraw-POST" enabled="false">
                 <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
@@ -1264,15 +1277,15 @@ fileWriter.close();
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
-  &quot;marketId&quot;: &quot;67d4840ab4d34cb799eda98a&quot;,&#xd;
+  &quot;marketId&quot;: &quot;67d6f9b258346bd7696bd99a&quot;,&#xd;
   &quot;oddType&quot;: &quot;back&quot;,&#xd;
-  &quot;odd&quot;: 88,&#xd;
-  &quot;run&quot;: &quot;5&quot;,&#xd;
-  &quot;teamId&quot;: &quot;0.7430137159276409&quot;,&#xd;
-  &quot;eventId&quot;: &quot;34121857&quot;,&#xd;
+  &quot;odd&quot;: 98,&#xd;
+  &quot;run&quot;: &quot;50000&quot;,&#xd;
+  &quot;teamId&quot;: &quot;144199&quot;,&#xd;
+  &quot;eventId&quot;: &quot;34129483&quot;,&#xd;
   &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
-  &quot;matchDate&quot;: &quot;2025-03-15T14:00:00.000Z&quot;,&#xd;
-  &quot;name&quot;: &quot;BOOKMAKER&quot;,&#xd;
+  &quot;matchDate&quot;: &quot;2025-03-18T12:00:00.000Z&quot;,&#xd;
+  &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
   &quot;stake&quot;: 1,&#xd;
   &quot;nation&quot;: &quot;AE&quot;,&#xd;
   &quot;browserDetail&quot;: {&#xd;
@@ -1781,7 +1794,7 @@ fileWriter.close();
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/user/withdraw-GET" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/user/withdraw-GET" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -2195,7 +2208,7 @@ fileWriter.close();
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2273,7 +2286,7 @@ fileWriter.close();
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Master" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${noThreadsMaster}</stringProp>
@@ -2283,9 +2296,10 @@ fileWriter.close();
         <stringProp name="ThreadGroup.duration">${runTime}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="TestPlan.comments">${noThreadsMaster} ${rampUp}</stringProp>
       </ThreadGroup>
       <hashTree>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -2514,7 +2528,7 @@ fileWriter.close();
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">marketId</stringProp>
-                  <stringProp name="Argument.value">67ac6d40fdd9ec1988390df2;67d3a8f855d14cec90391a0d;67d3a8f855d14cec90391a19;67d3a8f855d14cec90391a16;67d3a8f855d14cec90391a22;67d3c116556096a2a2e4df91;67d3e25a1914ff35083adbd9;67d3e1d4d89779de863a2d7b;67d3afe1556096a2a25a14c8;67d3ae2f55d14cec905e3488;67d3ae2f55d14cec905e348f;67d3aeb855d14cec90617e24;67d3aeb855d14cec90617e1d;67d3aeb855d14cec90617e2e;67d3aeb855d14cec90617e44;67d3ad91556096a2a24a1ce9;67d3aeb855d14cec90617dfd;67d3e25a1914ff35083adbe1;67d3ae2f55d14cec905e346b;67d3af77556096a2a2571ea0;67d3af77556096a2a2571e93;67d3afe1556096a2a25a1494;67d3e25a1914ff35083adbe5;67d3af77556096a2a2571eca;67d3e1d4d89779de863a2d77;67d067c7867a354f259ee724;67d1e903fd6227fa41866042;67d3e2ed286f5f523e211463;</stringProp>
+                  <stringProp name="Argument.value">67d757051e7b290110b018aa;67d757051e7b290110b01898;67d7e01804cc12518f3e071c;67d757051e7b290110b018bf;67d7e01804cc12518f3e073d;67d7e01804cc12518f3e073a;67d7e01804cc12518f3e0737;67d7e01804cc12518f3e0734;67d7e01804cc12518f3e0749;67d7e01804cc12518f3e075b;67d4f473c9032f3f125de33e;67d7be0704cc12518fea9555;67d78d1c04cc12518fa3930e;67d78c0a1e7b2901100855db;67d78c0a1e7b2901100855ad;67d78c0a1e7b2901100855b7;67d78c0a1e7b2901100855be;67d7be0704cc12518fea955b;</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2649,7 +2663,7 @@ fileWriter.close();
             <intProp name="calcMode">0</intProp>
             <doubleProp>
               <name>throughput</name>
-              <value>200.0</value>
+              <value>1000.0</value>
               <savedValue>0.0</savedValue>
             </doubleProp>
           </ConstantThroughputTimer>
@@ -2693,7 +2707,7 @@ fileWriter.close();
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>

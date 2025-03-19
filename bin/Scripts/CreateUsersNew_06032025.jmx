@@ -59,6 +59,11 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">need to change</stringProp>
           </elementProp>
+          <elementProp name="origin" elementType="Argument">
+            <stringProp name="Argument.value">https://test.future9.club</stringProp>
+            <stringProp name="Argument.name">origin</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
         <stringProp name="TestPlan.comments">FCUserRun1_10001</stringProp>
       </Arguments>
@@ -1732,7 +1737,7 @@ fileWriter.close();
                 <stringProp name="Header.value">Bearer ${token}</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -1932,7 +1937,7 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -2198,7 +2203,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="origin&#x9;https" elementType="Header">
                 <stringProp name="Header.name">origin</stringProp>
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -2351,7 +2356,7 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -2473,7 +2478,7 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -2655,7 +2660,7 @@ fileWriter.close();
                 <stringProp name="Header.value">Bearer ${token}</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://test.future9.club</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -2752,8 +2757,8 @@ fileWriter.close();
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -2761,7 +2766,7 @@ fileWriter.close();
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Branch/api/auth/admin-1" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Branch/api/auth/admin-1" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -2823,7 +2828,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="Origin" elementType="Header">
                 <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">${scheme}://future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
               <elementProp name="Content-Type" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -2867,7 +2872,7 @@ fileWriter.close();
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateUser" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CreateUser" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -2995,7 +3000,7 @@ fileWriter.close();
                 <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.value">https://future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
                 <stringProp name="Header.name">origin</stringProp>
               </elementProp>
             </collectionProp>
@@ -3062,7 +3067,7 @@ fileWriter.close();
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">asia-2607.future9.com</stringProp>
+          <stringProp name="HTTPSampler.domain">b2c.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/api/auth</stringProp>
@@ -3091,7 +3096,7 @@ fileWriter.close();
               </elementProp>
               <elementProp name="Origin" elementType="Header">
                 <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">${scheme}://future9.com</stringProp>
+                <stringProp name="Header.value">${origin}</stringProp>
               </elementProp>
               <elementProp name="Content-Type" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -3113,7 +3118,7 @@ fileWriter.close();
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">Testdata/remUsers.csv</stringProp>
+            <stringProp name="filename">D:/D/Private/fiver/futureclub9/NewDelivery/Jmeter5_Final_2k/bin/Testdata/UsersAll.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">username,password</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -3444,7 +3449,7 @@ fileWriter.close();
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
