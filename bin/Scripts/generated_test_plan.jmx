@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true"/>
+      <stringProp name="ThreadGroup.num_threads">2000</stringProp>
+      <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+      <stringProp name="ThreadGroup.loop_count">1</stringProp>
+      <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+    </ThreadGroup>
+    <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+      <stringProp name="HTTPSampler.domain">your.api.domain.com</stringProp>
+      <stringProp name="HTTPSampler.path">api/protected/game/market/status/eventId</stringProp>
+      <stringProp name="HTTPSampler.method">GET</stringProp>
+      <stringProp name="HTTPSampler.protocol">https</stringProp>
+    </HTTPSamplerProxy>
+    <ConstantThroughputTimer guiclass="ThroughputControlPanel" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+      <stringProp name="ConstantThroughputTimer.targetThroughput">40000</stringProp>
+      <stringProp name="ConstantThroughputTimer.per">1</stringProp>
+    </ConstantThroughputTimer>
+    <ResultCollector guiclass="ViewResultsTree" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <stringProp name="ResultCollector.defaultSave">false</stringProp>
+    </ResultCollector>
+  </hashTree>
+</jmeterTestPlan>
