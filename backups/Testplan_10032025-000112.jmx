@@ -24,7 +24,7 @@
           </elementProp>
           <elementProp name="noThreads" elementType="Argument">
             <stringProp name="Argument.name">noThreads</stringProp>
-            <stringProp name="Argument.value">1900</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
@@ -43,7 +43,7 @@
           <elementProp name="noThreadsMaster" elementType="Argument">
             <stringProp name="Argument.name">noThreadsMaster</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
           </elementProp>
           <elementProp name="origin" elementType="Argument">
             <stringProp name="Argument.name">origin</stringProp>
@@ -62,7 +62,7 @@
           </elementProp>
           <elementProp name="eventId" elementType="Argument">
             <stringProp name="Argument.name">eventId</stringProp>
-            <stringProp name="Argument.value">34129483</stringProp>
+            <stringProp name="Argument.value">34139132</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -83,6 +83,18 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">Testdata/UsersWithToken.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">username,password,token</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">false</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="B2C" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -99,7 +111,7 @@
         <stringProp name="TestPlan.comments"> </stringProp>
       </ThreadGroup>
       <hashTree>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1265,14 +1277,14 @@ fileWriter.close();
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
-  &quot;marketId&quot;: &quot;67d6f9b258346bd7696bd99a&quot;,&#xd;
+  &quot;marketId&quot;: &quot;67dbcb904acad033cfc89863&quot;,&#xd;
   &quot;oddType&quot;: &quot;back&quot;,&#xd;
   &quot;odd&quot;: 98,&#xd;
-  &quot;run&quot;: &quot;50000&quot;,&#xd;
-  &quot;teamId&quot;: &quot;144199&quot;,&#xd;
-  &quot;eventId&quot;: &quot;34129483&quot;,&#xd;
+  &quot;run&quot;: &quot;100000&quot;,&#xd;
+  &quot;teamId&quot;: &quot;4708889&quot;,&#xd;
+  &quot;eventId&quot;: &quot;34139132&quot;,&#xd;
   &quot;marketType&quot;: &quot;BOOKMAKER&quot;,&#xd;
-  &quot;matchDate&quot;: &quot;2025-03-18T12:00:00.000Z&quot;,&#xd;
+  &quot;matchDate&quot;: &quot;2025-03-21T01:45:00.000Z&quot;,&#xd;
   &quot;name&quot;: &quot;To Win The Toss&quot;,&#xd;
   &quot;stake&quot;: 1,&#xd;
   &quot;nation&quot;: &quot;AE&quot;,&#xd;
@@ -2196,7 +2208,7 @@ fileWriter.close();
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2287,7 +2299,7 @@ fileWriter.close();
         <stringProp name="TestPlan.comments">${noThreadsMaster} ${rampUp}</stringProp>
       </ThreadGroup>
       <hashTree>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/api/auth" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -2516,7 +2528,7 @@ fileWriter.close();
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">marketId</stringProp>
-                  <stringProp name="Argument.value">67d757051e7b290110b018aa;67d757051e7b290110b01898;67d7e01804cc12518f3e071c;67d757051e7b290110b018bf;67d7e01804cc12518f3e073d;67d7e01804cc12518f3e073a;67d7e01804cc12518f3e0737;67d7e01804cc12518f3e0734;67d7e01804cc12518f3e0749;67d7e01804cc12518f3e075b;67d4f473c9032f3f125de33e;67d7be0704cc12518fea9555;67d78d1c04cc12518fa3930e;67d78c0a1e7b2901100855db;67d78c0a1e7b2901100855ad;67d78c0a1e7b2901100855b7;67d78c0a1e7b2901100855be;67d7be0704cc12518fea955b;</stringProp>
+                  <stringProp name="Argument.value">67d4f473c9032f3f125de33e;67db9ba188d0f414fb1b1ac7;67db9ba188d0f414fb1b1aeb;67db9ba188d0f414fb1b1abe;67db9ba188d0f414fb1b1aee;67db9ba188d0f414fb1b1acd;67db9ba188d0f414fb1b1aca;67db9ba188d0f414fb1b1ad9;67db9ba188d0f414fb1b1adf;67db9ba188d0f414fb1b1ae2;67db9ba188d0f414fb1b1b0c;67db9ba188d0f414fb1b1b00;67db93df4acad033cf0edb60;67db93df4acad033cf0edb5c;67db93df4acad033cf0edb70;67db93df4acad033cf0edb8a;67db93df4acad033cf0edb7a;67db94ff88d0f414fb0b0112;67db93df4acad033cf0edb94;67dc2d4d88d0f414fb15a94d;67dc2d4d88d0f414fb15a95a;67d78af004cc12518f9fdc2b;67d78af004cc12518f9fdc49;67dbcb5f88d0f414fbb5af58;67d932501311fa373cf039e1;</stringProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2694,44 +2706,44 @@ fileWriter.close();
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
-        <objProp>
-          <name>saveConfig</name>
-          <value class="SampleSaveConfiguration">
-            <time>true</time>
-            <latency>true</latency>
-            <timestamp>true</timestamp>
-            <success>true</success>
-            <label>true</label>
-            <code>true</code>
-            <message>true</message>
-            <threadName>true</threadName>
-            <dataType>true</dataType>
-            <encoding>false</encoding>
-            <assertions>true</assertions>
-            <subresults>true</subresults>
-            <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
-            <fieldNames>true</fieldNames>
-            <responseHeaders>false</responseHeaders>
-            <requestHeaders>false</requestHeaders>
-            <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-            <assertionsResultsToSave>0</assertionsResultsToSave>
-            <bytes>true</bytes>
-            <sentBytes>true</sentBytes>
-            <url>true</url>
-            <threadCounts>true</threadCounts>
-            <idleTime>true</idleTime>
-            <connectTime>true</connectTime>
-          </value>
-        </objProp>
-        <stringProp name="filename"></stringProp>
-      </ResultCollector>
-      <hashTree/>
       <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
