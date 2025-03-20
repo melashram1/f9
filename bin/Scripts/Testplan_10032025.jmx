@@ -67,7 +67,7 @@
           </elementProp>
           <elementProp name="runTimeMaster" elementType="Argument">
             <stringProp name="Argument.name">runTimeMaster</stringProp>
-            <stringProp name="Argument.value">1200</stringProp>
+            <stringProp name="Argument.value">900</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2683,7 +2683,7 @@ fileWriter.close();
 char SEPARATOR = &apos;,&apos;;
 
 
-String csvFile = &quot;Execution//OutputLogs//marketStatusBetAPI.csv&quot;
+String csvFile = &quot;Execution//OutputLogs//marketStatusBetAPI_1.csv&quot;
 
 
 def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
@@ -3111,7 +3111,7 @@ fileWriter.close();
             <hashTree/>
           </hashTree>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="api/protected/game/market/status/ids" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="api/protected/game/market/status/ids" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -3336,7 +3336,7 @@ fileWriter.close();
 char SEPARATOR = &apos;,&apos;;
 
 
-String csvFile = &quot;Execution//OutputLogs//marketStatusBetAPI.csv&quot;
+String csvFile = &quot;Execution//OutputLogs//marketStatusBetAPI_2.csv&quot;
 
 
 def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
