@@ -17,7 +17,7 @@ mkdir -p "$BASE_DIR"
 mkdir -p "$REPORT_DIR"
 
 # Run JMeter with the remote server specified and additional parameters
-./jmeter -n -t "$JMX_FILE" -r -l "$JTL_FILE" -e -o "$REPORT_DIR"
+./jmeter -n -t "$JMX_FILE" -l "$JTL_FILE" -e -o "$REPORT_DIR"
 
 # Check if the JMeter test ran successfully
 if [ $? -eq 0 ]; then
