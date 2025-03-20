@@ -3173,7 +3173,7 @@ char SEPARATOR = &apos;,&apos;;
 String csvFile = &quot;checkingUsers_${__time(ddmmyyyy,)}.csv&quot;
 
 
-def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;token&quot;).toString(),vars.get(&quot;message&quot;).toString(),vars.get(&quot;availablePts&quot;)];
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;password&quot;).toString(),vars.get(&quot;token&quot;).toString(),vars.get(&quot;message&quot;).toString(),vars.get(&quot;availablePts&quot;)];
 
 //function write line in csv
 def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
