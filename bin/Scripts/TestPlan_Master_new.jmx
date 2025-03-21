@@ -43,7 +43,7 @@
           <elementProp name="noThreadsMaster" elementType="Argument">
             <stringProp name="Argument.name">noThreadsMaster</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">1500</stringProp>
+            <stringProp name="Argument.value">2000</stringProp>
           </elementProp>
           <elementProp name="origin" elementType="Argument">
             <stringProp name="Argument.name">origin</stringProp>
