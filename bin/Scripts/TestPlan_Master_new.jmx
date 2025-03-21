@@ -37,13 +37,13 @@
           <elementProp name="runTime" elementType="Argument">
             <stringProp name="Argument.name">runTime</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">600</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
             <stringProp name="Argument.desc">Read from the bat file</stringProp>
           </elementProp>
           <elementProp name="noThreadsMaster" elementType="Argument">
             <stringProp name="Argument.name">noThreadsMaster</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">2000</stringProp>
+            <stringProp name="Argument.value">500</stringProp>
           </elementProp>
           <elementProp name="origin" elementType="Argument">
             <stringProp name="Argument.name">origin</stringProp>
@@ -62,7 +62,7 @@
           </elementProp>
           <elementProp name="eventId" elementType="Argument">
             <stringProp name="Argument.name">eventId</stringProp>
-            <stringProp name="Argument.value">34108705</stringProp>
+            <stringProp name="Argument.value">34099614</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="runTimeMaster" elementType="Argument">
@@ -343,19 +343,12 @@ fileWriter.close();
                 <stringProp name="Argument.name">eventId</stringProp>
                 <stringProp name="Argument.value">${eventId}</stringProp>
               </elementProp>
-              <elementProp name="active" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">active</stringProp>
-                <stringProp name="Argument.value">true</stringProp>
-              </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">master.future9.com</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">api/protected/game/market/status/eventId</stringProp>
+          <stringProp name="HTTPSampler.path">api/protected/game/market/status/eventId/redis</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -491,7 +484,7 @@ fileWriter.close();
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
