@@ -10,7 +10,8 @@ JTL_FILE="$BASE_DIR/results.jtl"
 REPORT_DIR="$BASE_DIR/web"
 
 # Define the remote server IP (you can change this or pass it as an argument)
-REMOTE_HOST="10.0.46.9,10.0.34.153,10.0.44.143,10.0.36.63"
+#,10.0.34.153,10.0.44.143,10.0.36.63
+REMOTE_HOST="10.0.46.9"
 
 # Create directories
 mkdir -p "$BASE_DIR"
