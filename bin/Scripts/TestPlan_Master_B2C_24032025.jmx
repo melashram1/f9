@@ -431,18 +431,6 @@ fileWriter.close();
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-              <stringProp name="filename">D:/D/Private/fiver/futureclub9/NewDelivery/Jmeter5_Final_2k/bin/Testdata/UsersAll.csv</stringProp>
-              <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="variableNames">username,password</stringProp>
-              <boolProp name="ignoreFirstLine">false</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">false</boolProp>
-              <boolProp name="stopThread">true</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
               <stringProp name="JSON_PATH">$..message</stringProp>
               <stringProp name="EXPECTED_VALUE">Logged In Successfully</stringProp>
@@ -476,7 +464,7 @@ fileWriter.close();
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
@@ -484,7 +472,7 @@ fileWriter.close();
 char SEPARATOR = &apos;,&apos;;
 
 
-String csvFile = &quot;checkingUsers_${__time(ddmmyyyy,)}.csv&quot;
+String csvFile = &quot;new_checkingUsers_${__time(ddmmyyyy,)}.csv&quot;
 
 
 def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;password&quot;).toString(),vars.get(&quot;token&quot;).toString(),vars.get(&quot;message&quot;).toString(),vars.get(&quot;availablePts&quot;)];
@@ -1027,6 +1015,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//userPts.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile/api/user/profile" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1082,6 +1130,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//userProfile.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Transactions/api/user/transaction" enabled="true">
@@ -1146,6 +1254,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//userTransaction.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Openbet/api/user/openBet" enabled="true">
@@ -1217,6 +1385,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//usergetbets.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Bet History/api/user/openBet/history" enabled="true">
@@ -1292,6 +1520,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//betshistory.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Place Bet/api/user/openBet" enabled="true">
@@ -1384,6 +1672,66 @@ props.put(&quot;sharedTokens&quot;, currentList)
                 </elementProp>
               </collectionProp>
             </HeaderManager>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//openbet.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1548,6 +1896,66 @@ if (map != null &amp;&amp; !map.isEmpty()) {
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//MasterHome.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Master Tournament /api/common/game/tournament" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1619,6 +2027,66 @@ if (map != null &amp;&amp; !map.isEmpty()) {
 }
 </stringProp>
           </JSR223PreProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//MasterTournment.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
         <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
@@ -1720,7 +2188,7 @@ if (map != null &amp;&amp; !map.isEmpty()) {
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Master marketStatus eventId/api/common/game/market/status/redis" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Master marketStatus api/protected/game/market/status/eventId/local" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -1825,6 +2293,66 @@ if (tokenList != null &amp;&amp; !tokenList.isEmpty()) {
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">true</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//Masterevent.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
         <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
@@ -2016,6 +2544,66 @@ if (tokenList != null &amp;&amp; !tokenList.isEmpty()) {
             <boolProp name="INVERT">false</boolProp>
             <boolProp name="ISREGEX">true</boolProp>
           </JSONPathAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON message" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">message</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..message</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND(message)</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">//Default separator
+char SEPARATOR = &apos;,&apos;;
+
+
+String csvFile = &quot;Execution//OutputLogs//MasterIds.csv&quot;
+
+
+def params = [vars.get(&quot;username&quot;).toString(),vars.get(&quot;message&quot;).toString()];
+
+//function write line in csv
+def writeLine(FileWriter writer, List&lt;String&gt; parameters, char separator) throws IOException {
+    boolean firstParameter = true;
+    StringBuilder stringBuilder = new StringBuilder();
+    String parameter = &quot; &quot;;
+
+    for (int i = 0; i &lt; parameters.size(); i++) {
+        //get param
+        parameter = parameters[i];
+        log.info(parameter);
+
+        //if the first param in the line, separator is not needed
+        if (!firstParameter) {
+            stringBuilder.append(separator);
+        }
+
+        //Add param to line
+        stringBuilder.append(parameter);
+
+        firstParameter = false;
+    }
+
+    //prepare file to next line
+    stringBuilder.append(&quot;\n&quot;);
+
+    //add to file the line
+    log.info(stringBuilder.toString());
+    writer.append(stringBuilder.toString());
+}
+
+FileWriter fileWriter = new FileWriter(csvFile, true);
+writeLine(fileWriter, params, SEPARATOR);
+
+//proper close to file
+fileWriter.flush();
+fileWriter.close();
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
         <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
