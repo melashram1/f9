@@ -5,7 +5,7 @@ CURRENT_DATETIME=$(date +"%Y%m%d_%H%M%S")
 
 # Define paths
 BASE_DIR="Execution/Master_$CURRENT_DATETIME"
-JMX_FILE="Scripts/TestPlan_Master_new.jmx"
+JMX_FILE="Scripts/TestPlan_Master_B2C_24032025.jmx"
 JTL_FILE="$BASE_DIR/results.jtl"
 REPORT_DIR="$BASE_DIR/web"
 
